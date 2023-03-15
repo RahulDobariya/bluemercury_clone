@@ -71,3 +71,24 @@ ul {
     display: flex;
     justify-content: space-between;
 }
+
+#slide-text{
+    margin-top: 10px;
+}
+.carousel-section {
+    position: relative;
+    
+}
+
+.announcement-bar {
+    /* position: sticky; */
+    position: relative;
+    top: 0px;
+    width: 100%;
+    /* z-index: 5; */
+    margin: auto;
+    background-color: rgb(215, 235, 242);
+    color: rgb(0, 0, 0);
+    padding: 1px;
+    height: 25px;
+}
