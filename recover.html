@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recover Password</title>
+</head>
+<body>
+    <div id="parent">
+        <h1>RECOVER PASSWORD</h1>
+        <h3>Please enter your email</h3>
+        <Form>
+
+            <input type="email"  id="email" placeholder="Email">
+            <input type="submit"  id="submit" value="RECOVER">
+        </Form>
+         <p>Remember your password? <a href="login.html">Back to login</a></p>
+    </div>
+</body>
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit",findpassword)
+    var credentialsdata=JSON.parse(localStorage.getItem("credentials"))||[]
+    var password=""
+    var f=0;
+    function findpassword(){
+        event.preventDefault()
+        var email=document.querySelector("#email").value
+    credentialsdata.map(function (ele){
+        if(ele.email==email){
+        password=ele.password
+        f=1
+        }
+    })
+    if(f==1){
+
+     alert("Your password is "+ password)
+    }else{
+        alert("No account has been created with this email")
+    }
+    document.querySelector("#email").value=""
+    }
+</script>
