@@ -253,16 +253,14 @@ Start: Footer part
     font-weight: bolder;
 }
 
- .expandable {
-    visibility: collapse;
-} 
-
- .expand-toggle:checked~* .expandable {
-    visibility: visible;
-} 
+header{
+    margin-bottom: 50px;
+}
+ 
 
 #customer-login {
     margin-top: 100px;
+    margin-bottom: 200px;
 }
 
 .Form {
@@ -321,11 +319,6 @@ button {
     color: white;
     background-color: #12284c;
 }
-
- .Form_Invisible {
-     opacity: 0; 
-} 
-
  
 
 .centre {
@@ -336,13 +329,6 @@ button {
 
 
 
-#customer-login {
-    margin-bottom: 200px;
-}
 
-#create_customer {
-    margin-top: 50px;
-}
-header{
-    margin-bottom: 50px;
-}
+
+

@@ -1,19 +1,14 @@
-* {
+
+/* sinupbox css  */
+
+ * {
     font-family: 'Montserrat', sans-serif;
     font-weight: bolder;
 }
 
-.expandable {
-    visibility: collapse;
-}
 
-.expand-toggle:checked~* .expandable {
-    visibility: visible;
-}
 
-#customer-login {
-    margin-top: 100px;
-}
+
 
 .Form {
     width: 500px;
@@ -23,9 +18,7 @@
 }
 
 
-.recover-form {
-    margin-bottom: 250px;
-}
+
 
 .Form_header>h1,
 p {
@@ -36,14 +29,10 @@ p {
     margin-bottom: 40px;
 }
 
-#B-day {
-    width: 500px;
-    height: 50px;
-    border: 1px solid #12284c;
-}
+
 
 .Form_Box {
-    margin: 0px 0px 15px;
+    margin: 0px 0px 20px;
 }
 
 .Form_Ip {
@@ -53,15 +42,7 @@ p {
     border: 1px solid #12284c;
 }
 
-button {
-    cursor: pointer;
-}
 
-.Help_btn {
-    cursor: pointer;
-    background: transparent;
-    border: none;
-}
 
 .submitbtn {
     height: 50px;
@@ -71,11 +52,10 @@ button {
     margin: 20px 0px 0px;
     color: white;
     background-color: #12284c;
+    cursor: pointer;
 }
 
-.Form_Invisible {
-    opacity: 0;
-}
+
 
 .loyalty {
     background-color: #d1e8ee;
@@ -88,8 +68,10 @@ button {
 }
 
 .Note {
-    font-size: 10px;
+    font-size: 12px;
     text-align: right;
+    margin-bottom: 5px;
+    
 }
 
 .Offer_box {
@@ -133,18 +115,15 @@ button {
     padding-top: 8px;
 }
 
-#customer-login {
-    margin-bottom: 200px;
-}
 
 #create_customer {
     margin-top: 50px;
 }
 
-* {
+/* * {
     margin: 0px;
     padding: 0px;
-}
+} */
 #firsthead{
     font-size: 35px;
     font-weight: bold;
@@ -154,6 +133,9 @@ button {
     font-size: 15px;
     /* font-weight: bold; */
 }
+
+
+/* signupbox css */
 
 body {
     font-family: Montserrat light, sans-serif;
@@ -397,3 +379,10 @@ Start: Footer part
     background-color: white;
 }
 
+.expandable {
+    visibility: collapse;
+}
+
+.expand-toggle:checked~* .expandable {
+    visibility: visible;
+}
