@@ -1,32 +1,299 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recover Password</title>
+    <title>Cosmetics, Skincare, Wellness and Spa | bluemercury</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    
+    <script src="https://kit.fontawesome.com/a079df429a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="recover.css" />
+   
 </head>
 <body>
-    <div id="parent">
-        <h1>RECOVER PASSWORD</h1>
-        <h3>Please enter your email</h3>
-        <Form>
-
-            <input type="email"  id="email" placeholder="Email">
-            <input type="submit"  id="submit" value="RECOVER">
-        </Form>
-         <p>Remember your password? <a href="login.html">Back to login</a></p>
+    <!-- nav bar -->
+    <div id="main_nav">
+        <dvi class="top_part">
+            <div class="location">
+                <a href="https://www.google.com/maps">
+                    <i class="fa-solid fa-location-dot"></i>
+                  STORE & SPA LOCATOR
+                </a>
+            </div>
+            <div class="logo">
+                <a href="index.html">
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/bluemercury-logo_1216x.png?v=1648743182" 
+                    alt="bluemercury"
+                  />
+                </a>
+            </div>
+            <div class="nav_links">
+                <ul class="navItem">
+                    <li>
+                        <a href="" class="navlink">
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            WISHLIST
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="navlink">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                            SEARCH
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="navlink">
+                            <i class="fa fa-user-circle"></i>
+                            SIGN IN/UP
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="navlink">
+                            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                            BAG
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </dvi>
+        <div class="bottom_part">
+            <ul class="menu">
+              <li class="dropdown">
+                <a class="navlink"> SHOP </a>
+              </li>
+              <li>
+                <a href="" class="navlink"> NEW! </a>
+              </li>
+              <li>
+                <a href="https://bluemercury.com/pages/brands" class="navlink">
+                  BRANDS
+                </a>
+              </li>
+              <li>
+                <a href="https://bluemercury.com/pages/explore" class="navlink">
+                  EXPLORE
+                </a>
+              </li>
+              <li>
+                <a href="https://bluemercury.com/pages/events" class="navlink">
+                  EVENTS
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://bluemercury.com/pages/bluerewards" class="navlink"
+                >
+                  BLUEWARDS
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://bluemercury.com/pages/bluerewards" class="navlink"
+                >
+                  ROUTINE REBOOT
+                </a>
+              </li>
+            </ul>
+        </div> 
     </div>
+
+  <!-- navbar end -->
+
+
+  <!--Carousel section-->
+    <div class="carousel-section">
+      <div class="announcement-bar" id="slide-text"></div>
+      <div class="best-sellers" id="slide-img"></div>
+    </div>
+    <!-- login box section -->
+      <div id="bigbox">
+        <div class="innerbox">
+
+            <h1>RECOVER PASSWORD</h1>
+            <p style="font-size: 15px;font-weight:lighter;">Please enter your email: </p>
+            <p id="show" style="color: red ;"></p>
+        </div>
+
+         <div class="innerbox">
+            <input type="email" placeholder="Email" id="placeholder" required="required">
+         </div>
+         <div class="innerbox">
+            <button id="btn">RECOVER</button>
+         </div>
+         <div class="innerbox" >
+            <p id="last">Remember your password? <a href="login.html">Back to login</a></p>
+         </div>
+      </div>
+    
+
+     <!-- login box section -->
+
+
+
+  <!-- footer -->
+    <footer class="footer-part">
+      <div class="newsletter">
+        <p>Get Expert Beauty Insight & Offers</p>
+        <form id="footer-mail-collect" onsubmit="overlaymsg(event)">
+          <div id="mail-submission-success-overlay">
+            <div>
+              <img
+                src="https://thumbs.gfycat.com/ShyCautiousAfricanpiedkingfisher-max-1mb.gif"
+                alt="successful"
+              />
+              <p id="success-msg">You will hear from us soon!</p>
+              <div onclick="overlayMsgHide()" id="hide-overlay">Done</div>
+            </div>
+          </div>
+          <input
+            class="footer-mail e-mail"
+            id="newsletter-mail-input"
+            name="e-mail"
+            type="email"
+            placeholder="EMAIL ADDRESS"
+          />
+          <button id="arrow-submit-btn" type="submit">
+            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+          </button>
+        </form>
+        <p>
+          By continuing, you agree to Bluemercury's
+        </p>
+        <a href="index.html">Privacy Note</a>
+        <p class="icons">
+          <a href="https://twitter.com/bluemercury" target="_blank"
+            ><i class="fa fa-twitter" aria-hidden="true"></i
+          ></a>
+          <a href="https://www.pinterest.com/bluemercury/" target="_blank"
+            ><i class="fa fa-pinterest-p" aria-hidden="true"></i
+          ></a>
+          <a href="https://facebook.com/bluemercury" target="_blank"
+            ><i class="fa fa-facebook" aria-hidden="true"></i
+          ></a>
+          <a href="https://instagram.com/bluemercury" target="_blank"
+            ><i class="fa fa-instagram" aria-hidden="true"></i
+          ></a>
+          <a
+            href="https://www.youtube.com/channel/UCrgUXfV7IIFllEQMbzd9J3A"
+            target="_blank"
+            ><i class="fa fa-youtube-play" aria-hidden="true"></i
+          ></a>
+        </p>
+        <p>Copyright 2021 bluemercury. All Rights Reserved.</p>
+      </div>
+
+      <div class="footer-navwrap">
+        <div class="bluemercury-links">
+          <h2>Bluemercury</h2>
+          <ul>
+            <li>
+              <a href="#">Our Company</a>
+            </li>
+            <li>
+              <a href="#">Store Locator</a>
+            </li>
+            <li>
+              <a href="#">In-Store & Online Events</a>
+            </li>
+            <li>
+              <a href="#">Spa Menu</a>
+            </li>
+            <li>
+              <a href="#">Press</a>
+            </li>
+            <li>
+              <a href="#">Careers</a>
+            </li>
+            <li>
+              <a href="#">Vendor Submissions</a>
+            </li>
+            <li>
+              <a href="#">Diversity & Inclusion</a>
+            </li>
+          </ul>
+        </div>
+        <div class="myaccount-links">
+          <h2>My Account</h2>
+          <ul>
+            <li>
+              <a href="#">My Account</a>
+            </li>
+            <li>
+              <a href="#">BlueRewards</a>
+            </li>
+            <li>
+              <a href="#">Gift Card Balance Checker</a>
+            </li>
+          </ul>
+        </div>
+        <div class="customerservice-links">
+          <h2>Customer Service</h2>
+          <ul>
+            <li>
+              <a href="#">Contact Us</a>
+            </li>
+            <li>
+              <a href="#">Help & FAQ</a>
+            </li>
+            <li>
+              <a href="#">Shipping, Returns & Exchanges</a>
+            </li>
+            <li>
+              <a href="#">Gift Cards</a>
+            </li>
+            <li>
+              <a href="#">Offers & Promotions</a>
+            </li>
+            <li>
+              <a href="#">Klarna</a>
+            </li>
+          </ul>
+        </div>
+        <div class="resources-links">
+          <h2>Resources</h2>
+          <ul>
+            <li>
+              <a href="#">Terms & Conditions</a>
+            </li>
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#">Accessiblility</a>
+            </li>
+            <li>
+              <a href="#">COVID-19 Updates</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
 </body>
 </html>
+
+
+
 <script>
-    document.querySelector("form").addEventListener("submit",findpassword)
+    document.querySelector("#btn").addEventListener("click",findpassword)
     var credentialsdata=JSON.parse(localStorage.getItem("credentials"))||[]
     var password=""
     var f=0;
     function findpassword(){
         event.preventDefault()
-        var email=document.querySelector("#email").value
+        var email=document.querySelector("#placeholder").value
     credentialsdata.map(function (ele){
         if(ele.email==email){
         password=ele.password
@@ -35,10 +302,12 @@
     })
     if(f==1){
 
-     alert("Your password is "+ password)
+    //  alert("Your password is "+ password)
+    document.querySelector("#show").textContent="Your password is "+ password
     }else{
-        alert("No account has been created with this email")
+        // alert("No account has been created with this email")
+    document.querySelector("#show").textContent="No account has been created with this email"
     }
-    document.querySelector("#email").value=""
+    document.querySelector("#placeholder").value=""
     }
 </script>
