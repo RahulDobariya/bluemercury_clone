@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #upper-part {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    #upper-part h2{
+        margin-left: 26%;
+    }
+    #upper-part h4{
+        margin-right: 12%;
+    }
+    #upper-part h4 select{
+        width: 140px;
+        height: 45px;
+    }
+    #grandparent-box{
+        display: flex;
+        margin-left: 12%;
+    }
+    #filter{
+        width: 300px;
+        
+    }
+    #Parent-box{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        
+    }
+</style>
+<body>
+    <div id="upper-part">
+        <h2>FLORAL FRAGRANCES</h2>
+        <h4>SORT BY <select id="sort">
+            <option value="Featured">Featured</option>
+            <option value="New Arrivals">New Arrivals</option>
+            <option value="Best Sellers">Best Sellers</option>
+            <option value="price">Price, Low to High</option>
+            <option value="price">Price, High to Low</option>
+            
+        </select></h4>
+    </div>
+    <div id="grandparent-box">
+        <div id="filter">
+            <fieldset>
+                <legend>Brand</legend>
+                <div>
+                    <input type="checkbox" >
+                    <label for="Lake & Skye">LAKE & SKYE</label>
+                </div>
+            </fieldset>
+        </div>
+        <div id="Parent-box">
+            <div class="childe-box">
+                <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-size-100ml-690251126668-1_288x288.jpg?v=1675120444" alt="">
+                <h5>JO MALONE LONDON</h5>
+                <p>Scarlet Poppy Cologne Intence</p> 
+                <p class="price">$160-$220</p>
+            </div>
+            <div class="childe-box">
+                <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-size-17oz50ml-3473311931603-1_288x288.jpg?v=1678267276" alt="">
+                <h5>SISLEY-PARIS</h5>
+                <p>L'Eau Revee D'Isa</p> 
+                <p class="price">$115-$195</p>
+            </div>
+            <div class="childe-box">
+                <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-3700431444394-1_288x288.jpg?v=1675874501" alt="">
+                <h5>DIPTYQUE</h5>
+                <p>Do Son Eau De Parfum</p> 
+                <p class="price">$205</p>
+            </div>
+            <div class="childe-box">
+                <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-size-100oz34ml-690251128341-1_288x288.jpg?v=1678180119" alt="">
+                <h5>JO MALONE LONDON</h5>
+                <p>Nashi Blossom Cologne</p> 
+                <p class="price">$112-$158</p>
+            </div>
+            <div class="childe-box">
+                <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-size-34oz-888066000079-1_288x288.jpg?v=1675358066" alt="">
+                <h5>TOM FORD</h5>
+                <p>Black Orchid Eau De Parfum</p> 
+                <p class="price">$150-$215</p>
+            </div>
+            <div class="childe-box">
+                <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-3700431435002-1_288x288.jpg?v=1672881020" alt="">
+                <h5>DIPTYQUE</h5>
+                <p>Eau Rose Eau De Parfum 75</p> 
+                <p class="price">$205</p>
+            </div>
+            <div class="childe-box">
+                <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-850032889285-1_288x288.jpg?v=1677622354" alt="">
+                <h5>THE MAKER</h5>
+                <p>Wild Eau De Parfum</p> 
+                <p class="price">$175</p>
+            </div>
+            <div class="childe-box">
+                <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-size-17floz50ml-087327013753-1_288x288.jpg?v=1677625410" alt="">
+                <h5>LAKE & SKYE</h5>
+                <p>Santal Gray Eau DE Parfum</p> 
+                <p class="price">$36-$98</p>
+            </div>
+            <div class="childe-box">
+                <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-size-100ml-888066098878-1_288x288.jpg?v=1675279204" alt="">
+                <h5>TOM FORD</h5>
+                <p>Lost Cherry Eau De Parfum</p> 
+                <p class="price">$75-$570</p>
+            </div>
+            <div class="childe-box">
+                <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-850039151040-1_288x288.jpg?v=1677622136" alt="">
+                <h5>ELLIS BROOKLYN</h5>
+                <p>Apres Essentials Gift Set</p> 
+                <p class="price">$105</p>
+            </div>
+            <div class="childe-box">
+                <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-3700458603477-1_288x288.jpg?v=1678907668" alt="">
+                <h5>MEMO PARIS</h5>
+                <p>Sintra Eau De Parfum</p> 
+                <p class="price">$300</p>
+            </div>
+            <div class="childe-box">
+                <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-size-30ml-888066117135-1_288x288.jpg?v=1675210784" alt="">
+                <h5>TOM FORD</h5>
+                <p>Rose Prick</p> 
+                <p class="price">$80-$1,250</p>
+            </div>
+            <div class="childe-box">
+                <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-size-defaulttitle-642498015427-1_288x288.jpg?v=1675136295" alt="">
+                <h5>AROMATHERAPY ASSOCIATES</h5>
+                <p>Rose Candel</p> 
+                <p class="price">$72</p>
+            </div>
+            <div class="childe-box">
+                <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-size-25oz-840035200477-1_288x288.jpg?v=1675119107" alt="">
+                <h5>ORIBE</h5>
+                <p>Cote D'Azur Eau De Parfum</p> 
+                <p class="price">$34-$125</p>
+            </div>
+            <div class="childe-box">
+                <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-3701222600517-1_288x288.jpg?v=1668695499" alt="">
+                <h5>HARMETCA</h5>
+                <p>RoseFire Eau De Parfum</p> 
+                <p class="price">$100</p>
+            </div> 
+            <div class="childe-box">
+                <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-size-50ml-8719689206345-1_288x288.jpg?v=1666973153" alt="">
+                <h5>ABEL</h5>
+                <p>Pink Iris Eau De Parfum</p> 
+                <p class="price">$80-$165</p>
+            </div> 
+            <div class="childe-box">
+                <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-195893602933-1_288x288.jpg?v=1673968376" alt="">
+                <h5>BLUEMERCURY</h5>
+                <p>Rrose Eau De Parfum</p> 
+                <p class="price">$38</p>
+            </div> 
+            <div class="childe-box">
+                <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-857457008086-1_288x288.jpg?v=1677621667" alt="">
+                <h5>HARLEM CANDEL CO.</h5>
+                <p>RoseFire Eau De Parfum</p> 
+                <p class="price">$65</p>
+            </div> 
+            <div class="childe-box">
+                <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-690251019588-1_288x288.jpg?v=1675117576" alt="">
+                <h5>JO MALONE LONDON</h5>
+                <p>Red Roses Home Candel</p> 
+                <p class="price">$75</p>
+            </div> 
+            <div class="childe-box">
+                <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-size-30ml-690251028405-1_288x288.jpg?v=1675115665" alt="">
+                <h5>JO MALONE LONDON</h5>
+                <p>Peony % Blush</p> 
+                <p class="price">$80-$150</p>
+            </div> 
+            <div class="childe-box">
+                <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-3700431406132-1_288x288.jpg?v=1677590758" alt="">
+                <h5>DIPTYQUE</h5>
+                <p>Outdoor Candel</p> 
+                <p class="price">$430</p>
+            </div>        
+        </div>
+    </div>
+
+</body>
+</html>
