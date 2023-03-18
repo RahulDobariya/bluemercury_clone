@@ -378,32 +378,45 @@ Start: Footer part
 Start: MEDIA QUERIES
 ****************************/
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 700px) {
+    
     .navItem{
         display: none;
     }
-    .specials {
-        flex-direction: column;
-    }
-
-    .description-container {
+    .menu{
         flex-direction: column;
         text-align: center;
+        align-items: center;
+    }
+    .logo img {
+        min-width: 80px;
+        max-width: 130px;
+        margin-left: 150px;
+        margin-top: 15px;
+    }
+    .cards-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        /* margin: 0 .5em; */
+        width: 100%;
+        align-items: center;
+    }
+    .card-body{
+        text-align: center;
+    }
+    
+    .description-container1 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .description-container1 .extra-image{
+        width: 300px;
     }
     
 }
 
-@media only screen and (max-width: 500px) {
-    .navItem{
-        display: none;
-    }
-    .specials {
-        flex-direction: column;
-    }
-
-    .description-container {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-}
