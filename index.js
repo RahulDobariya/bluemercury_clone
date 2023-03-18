@@ -12,7 +12,7 @@ function slideshowOffer() {
     p.innerHTML = announcement_msg[0];
     p.style.textAlign = 'center';
     p.style.marginTop = "5px"
-    p.style.fontSize = "10px"
+    p.style.fontSize = "11px"
     p.style.letterSpacing= "1px"
     slide_text.append(p);
     let i = 1;

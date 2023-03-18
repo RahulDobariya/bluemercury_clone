@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: Montserrat light, sans-serif;
+    font-family: "Montserrat Light", sans-serif;
     font-size: 14px;
     letter-spacing: 1px;
     margin: 10px 0px 0px 0px;
@@ -24,8 +24,7 @@ a {
     position: sticky;
     display: flex;
     flex-direction: column;
-    background-color: white;
-    font-family: Montserrat Medium, sans-serif;
+    font-family: "Montserrat Light", sans-serif;
     color: #12284C;
     letter-spacing: 1px;
     
@@ -279,7 +278,7 @@ Start: Footer part
 .footer-navwrap h2 {
     font-weight: normal;
     font-size: 14px;
-    font-family: Montserrat light, sans-serif;
+    font-family: "Montserrat Light", sans-serif;
     text-transform: uppercase;
 }
 
