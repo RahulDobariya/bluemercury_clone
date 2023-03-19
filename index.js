@@ -57,6 +57,11 @@ function slideshowBestSellers() {
 
 slideshowBestSellers();
 
-// var username = localStorage.getItem("username");
 
-// document.getElementById("user").textContent = username;
+var username = localStorage.getItem("username");
+if(username === null){
+    document.getElementById("signin").textContent = "SIGN IN/UP";
+}
+else{
+    document.getElementById("signin").textContent = username;
+}
