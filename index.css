@@ -77,6 +77,10 @@ ul {
     display: flex;
     justify-content: space-between;
 }
+.menu li:hover {
+    border-bottom: 3px solid #12284c;
+    transition: .1s;
+}
 
 #slide-text{
     margin-top: 10px;
@@ -244,11 +248,12 @@ Start: Footer part
 }
 
 .newsletter {
-    flex: 0 1 auto; /* SOMETHING IS GOING WRONG ON DECREASING WINDOW WIDTH */
+    flex: 0 1 auto;
     margin: 0px 20px;
-    max-width: 50ch;
-    min-width: 30ch;
+    /* max-width: 50ch;
+    min-width: 30ch; */
     line-height: 30px;
+    width: 25%;
 }
 
 .newsletter > .icons {
@@ -472,8 +477,21 @@ Start: MEDIA QUERIES
         margin-bottom: 40px;
     }
 
-    .footer-part {
+     .footer-navwrap{
         display: none;
+    }
+    /* .footer-part{
+        background: #12284C;
+    } */
+    .footer-part .icons{
+        display: flex;
+    }
+
+    .newsletter{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
     }
     
     
