@@ -82,6 +82,8 @@ ul {
     transition: .1s;
 }
 
+
+
 #slide-text{
     margin-top: 10px;
 }
@@ -121,6 +123,9 @@ Start: best seller part
 .card{
     /* margin: 0 .5em; */
     width: 25%;
+}
+.card a {
+    text-decoration: none;
 }
 .image-wrapper{
     height: 20vw;
@@ -391,14 +396,14 @@ Start: MEDIA QUERIES
         display: none;
     }
     .menu{
+        display: flex;
         flex-direction: column;
         text-align: center;
-        align-items: center;
     }
     .logo img {
         min-width: 80px;
-        max-width: 130px;
-        margin-left: -100px;
+        max-width: 150px;
+        margin-left: -25px;
         margin-top: 15px;
         align-items: center;
     }
@@ -407,10 +412,14 @@ Start: MEDIA QUERIES
         flex-direction: column;
         align-items: center;
     }
+    .image-wrapper{
+        align-items: center;
+    }
     .card{
         /* margin: 0 .5em; */
         width: 100%;
         align-items: center;
+
     }
     .card-body{
         text-align: center;

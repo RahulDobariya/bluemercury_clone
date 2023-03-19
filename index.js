@@ -11,7 +11,7 @@ function slideshowOffer() {
 
     p.innerHTML = announcement_msg[0];
     p.style.textAlign = 'center';
-    p.style.marginTop = "10px"
+    p.style.marginTop = "5px"
     p.style.fontSize = "11px"
     p.style.letterSpacing= "1px"
     slide_text.append(p);
@@ -65,3 +65,4 @@ if(username === null){
 else{
     document.getElementById("signin").textContent = username;
 }
+
