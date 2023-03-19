@@ -57,6 +57,6 @@ function slideshowBestSellers() {
 
 slideshowBestSellers();
 
-var username = localStorage.getItem("username");
+// var username = localStorage.getItem("username");
 
-document.getElementById("user").textContent = username;
+// document.getElementById("user").textContent = username;
