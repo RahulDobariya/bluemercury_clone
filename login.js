@@ -11,6 +11,7 @@ function checkdata(){
         document.getElementById("showUsername").textContent = "Logged in as  "+ele.firstname+" ";
          window.location.assign("hompage.html");
          f=1
+         localStorage.setItem("username",ele.firstname);
      }
  })
    if(f==0){

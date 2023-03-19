@@ -1,7 +1,7 @@
 document.querySelector("form").addEventListener("submit",getcredentials)
 var signupdata=JSON.parse(localStorage.getItem("credentials"))||[]
 
-    
+  
 
 function getcredentials(){
     event.preventDefault();
