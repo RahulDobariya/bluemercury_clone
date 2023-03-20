@@ -1,0 +1,323 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Montserrat light, sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin: 10px 0px 0px 0px;
+}
+a {
+    
+    color: #12284c;
+    margin: 0;
+    padding: 0;
+}
+
+.location a {
+    text-decoration: none;
+    color: #12284c;
+}
+#main_nav{
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    font-family: Montserrat Medium, sans-serif;
+    color: #12284C;
+    letter-spacing: 1px;
+    
+}
+.top_part{
+    display: flex;
+    margin-bottom: 15px;
+    margin-left: 30px;
+    margin-right: 40px;
+    font-size: 10px;
+}
+.top_part > div {
+    margin: 2px;
+    flex-basis: 100%;
+}
+.top_part a {
+    text-decoration: none;
+}
+.bottom_part{
+    font-size: 14px;
+}
+.bottom_part a {
+    text-decoration: none;
+}
+
+.navItem{
+    display: flex;
+    width: 80%;
+    float: right;
+    justify-content: space-around;
+    align-items: center;
+}
+.navItem li a i,
+.top_part .location a i {
+    font-size: 20px;
+}
+ul {
+    list-style-type: none;
+}
+.logo img {
+    min-width: 190px;
+    max-width: 200px;
+    margin-left: 150px;
+    margin-top: 15px;
+}
+
+.menu{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#slide-text{
+    margin-top: 10px;
+}
+.carousel-section {
+    position: relative;
+    
+}
+
+.announcement-bar {
+    /* position: sticky; */
+    position: relative;
+    top: 0px;
+    width: 100%;
+    /* z-index: 5; */
+    margin: auto;
+    background-color: rgb(215, 235, 242);
+    color: rgb(0, 0, 0);
+    padding: 1px;
+    height: 25px;
+}
+
+/****************************
+Start: Footer part
+****************************/
+
+.footer-part {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 15px 30px;
+    border-top: 2px solid #dcdcdc;
+}
+
+.newsletter {
+    flex: 0 1 auto; /* SOMETHING IS GOING WRONG ON DECREASING WINDOW WIDTH */
+    margin: 0px 20px;
+    max-width: 50ch;
+    min-width: 30ch;
+    line-height: 30px;
+}
+
+.newsletter > .icons {
+    display: flex;
+    flex: 1 1 0%;
+    justify-content: space-between;
+    max-width: 90%;
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #12284c;
+}
+
+.footer-navwrap {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 0;
+    justify-content: space-between;
+    min-width: 600px; /* CHANGE THIS IN FUTURE TO MAKE IT PROPERLY RESPONSIVE*/
+}
+
+.footer-navwrap > * {
+    justify-items: space-between;
+    flex-basis: 100%;
+    margin-bottom: 5px;
+    color: #12284c;
+    font-weight: normal;
+}
+
+.footer-navwrap h2 {
+    font-weight: normal;
+    font-size: 14px;
+    font-family: Montserrat light, sans-serif;
+    text-transform: uppercase;
+}
+
+.footer-navwrap > div > * > * {
+    margin: 16px auto;
+}
+
+.footer-navwrap ul,
+.footer-navwrap li a {
+    color: #12284c;
+    list-style-type: none;
+    padding: 0px;
+    text-decoration: none;
+}
+
+.footer-mail {
+    width: 90%;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid #12284c;
+}
+
+.footer-mail:focus {
+    outline: none;
+}
+
+#arrow-submit-btn {
+    border: none;
+    outline: none;
+    margin: 0px;
+    padding: 0px;
+    height: 30px;
+    background-color: white;
+}
+
+#arrow-submit-btn:hover {
+    cursor: pointer;
+}
+
+#mail-submission-success-overlay {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    cursor: pointer;
+    text-align: center;
+    color: #12284c;
+    transition: 2s;
+}
+
+#mail-submission-success-overlay > div {
+    font-size: 20px;
+    width: 300px;
+    height: 300px;
+    padding: 50px;
+    margin: 5% auto;
+    background-color: white;
+    border-radius: 15px;
+}
+
+#mail-submission-success-overlay > div > img {
+    width: 50px;
+    margin-top: 50px;
+}
+
+#hide-overlay {
+    color: #12284c;
+    border: 2px solid #12284c;
+    border-radius: 10px;
+    width: 45%;
+    margin: auto;
+    /* height: 40px; */
+    padding: 10px;
+    font-size: 20px;
+}
+
+#hide-overlay:hover {
+    cursor: pointer;
+    background-color: #12284c;
+    color: white;
+}
+
+.footer-mail:focus {
+    background-color: white;
+}
+
+
+/* mainbox// */
+
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+}
+
+#bigbox{
+    width: 50%;
+    margin: 80px auto 200px auto;
+    /* border: 2px solid red; */
+}
+.innerbox{
+    margin: 25px auto 20px auto;
+    text-align: center;
+    
+}
+#placeholder{
+    width: 65%;
+    height: 40px;
+    /* font-size: 15px; */
+    font-weight: lighter;
+    padding-left: 25px;
+    
+    
+    
+}
+#btn{
+    font-size: 15px;
+    font-weight: bolder;
+    width: 70%;
+    height: 40px;
+    color:white;
+    background-color:#12284C
+    
+}
+h1{
+    margin-bottom: 20px;
+    font-size: 35px;
+    font-weight: bolder;
+}
+#show{
+    margin-top: 20px;
+}
+
+
+/****************************
+Start: Footer top part
+****************************/
+
+.footer-top{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    line-height: 20px;
+    background-color: #f8f8f8;
+    padding: 30px 0 30px 0;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    
+}
+.footer-top i{
+    font-size: 25px;
+}
+.footer-top .para{
+    font-size: 12px;
+}
+
+.footer-top a {
+    text-decoration: none;
+    color: #12284c;
+    cursor: pointer;
+}
+
+
