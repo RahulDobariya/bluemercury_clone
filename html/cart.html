@@ -5,704 +5,314 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart Page</title>
-    <link rel="stylesheet" href="product.css" />
-    <link rel="icon"  href="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/favicon_48x48.png?v=1614288647">
+    <title>Document</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Eczar:wght@400;500;600;800&family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,500;1,600;1,800&family=Roboto+Slab:wght@200;400;600;800;900&family=Splash&family=Yantramanav:wght@400;500;900&display=swap"
-        rel="stylesheet">
-    <style>
-        /* Navbar CSS starts here */
 
-        body {
-            font-family: "Montserrat Light", sans-serif;
-        }
-
-        #navigation-links {
-            display: flex;
-            width: 95%;
-            margin: auto;
-        }
-
-        .heading_one {
-            display: flex;
-        }
-
-        .heading_one>div:nth-child(2) {
-            margin-left: 10px;
-            margin-right: 30px;
-            margin-top: 10px;
-            font-size: 12px;
-            color: #12284c;
-            font-weight: 400;
-        }
-
-        #navigation-links>div:nth-child(1) {
-            flex-grow: 1;
-        }
-
-        .logo {
-            text-align: center;
-        }
-
-        .logo img {
-            height: 50px;
-        }
-
-        #shoplink {
-            display: flex;
-            justify-content: space-around;
-            width: 75%;
-            margin: auto;
-            margin-top: 20px;
-        }
-
-        a {
-            cursor: pointer;
-            text-decoration: none;
-            color: #12284c;
-            /* color: rgba(18, 40, 76); */
-        }
-
-        i {
-            margin-top: 8px;
-            cursor: pointer;
-
-        }
-
-        .productlink {
-            text-decoration: none;
-            font-weight: 100;
-            color: rgba(18, 40, 76, 0.8);
-            font-size: 12px;
-            line-height: 24px;
-            font-style: normal;
-            background-color: white;
-            border: none;
-
-        }
-
-        a:hover {
-            color: rgba(18, 40, 76);
-            font-weight: 400;
-        }
-
-        #shop {
-            text-decoration: none;
-        }
-
-        button {
-            border: none;
-            background: none;
-        }
-
-        #shop_hover {
-            width: 90%;
-            display: none;
-            margin: auto;
-            grid-template-columns: 200px 50px 200px 200px 300px;
-            padding-left: 200px;
-            position: fixed;
-            top: 140px;
-            z-index: 2;
-            border-width: 1px 0 1px 0;
-            border-style: solid;
-            border-color: #EEEEEE;
-        }
-
-        #shop_hover a {
-            text-decoration: none;
-            color: rgba(18, 40, 76, 0.6);
-            font-size: 14px;
-        }
-
-        #shop_hover a:hover {
-            color: #12284c;
-            size: 10px;
-        }
-
-        .two {
-            width: 0%;
-            height: 410px;
-            border: .1px solid #E0E0E0;
-        }
-
-
-
-
-
-
-        /* Navbar CSS ends here */
-
-
-        button {
-            width: 20%;
-            border-radius: 10px;
-            background-color: teal;
-            color: white;
-            border: none;
-            padding: 10px 0;
-            margin-bottom: 10px;
-        }
-
-        #parent>div {
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-            text-align: center;
-        }
-
-        #form1 {
-            text-align: center;
-        }
-
-
-        .imgCart {
-            width: 100%;
-        }
-
-        #showPrice {
-            text-align: center;
-        }
-
-        #parent {
-            /* border: 2px solid red; */
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 10px;
-        }
-
-        .price {
-            text-align: center;
-        }
-
-        /* .Remove{
-            display: flex;
-            align-items: center;
-
-        } */
-
-        .Remove {
-            background-color: grey;
-            width: 70%;
-        }
-
-        .btn>a {
-            text-decoration: none;
-            color: white;
-        }
-
-        .cart {
-            width: 50%;
-            border-radius: 10px;
-            background-color: teal;
-            color: white;
-            border: none;
-            padding: 10px 0;
-            margin-bottom: 10px;
-            display: flex;
-            justify-content: space-around;
-        }
-
-
-
-
-
-
-        /* footer css */
-
-        .footer-part {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            padding: 15px 30px;
-            border-top: 2px solid #dcdcdc;
-        }
-
-        .newsletter {
-            margin: 0px 20px;
-            max-width: 50ch;
-            min-width: 30ch;
-            line-height: 30px;
-        }
-
-        .icons {
-            display: flex;
-            justify-content: space-between;
-            max-width: 70%;
-            /* margin: auto; */
-            /* font-size: 20px; */
-            color: #12284c;
-        }
-
-        .footer-navwrap {
-            display: flex;
-            flex-direction: row;
-            flex: 1 1 0;
-            justify-content: space-between;
-            min-width: 600px;
-        }
-
-        .footer-navwrap>* {
-            justify-items: space-between;
-            flex-basis: 100%;
-            margin-bottom: 5px;
-            color: #12284c;
-            font-weight: normal;
-        }
-
-        .footer-navwrap h2 {
-            font-weight: normal;
-            font-size: 12px;
-            font-family: Montserrat light, sans-serif;
-            text-transform: uppercase;
-        }
-
-        .footer-navwrap>div>*>* {
-            margin: 5px auto;
-        }
-
-        .footer-navwrap ul,
-        .footer-navwrap li a {
-            color: #12284c;
-            list-style-type: none;
-            padding: 0px;
-            text-decoration: none;
-        }
-
-        .footer-mail {
-            width: 90%;
-            height: 30px;
-            border: none;
-            border-bottom: 1px solid #12284c;
-        }
-
-        .footer-mail:focus {
-            outline: none;
-        }
-
-        #arrow-submit-btn {
-            border: none;
-            outline: none;
-            margin: 0px;
-            padding: 0px;
-            height: 30px;
-            background-color: white;
-        }
-
-        #arrow-submit-btn:hover {
-            cursor: pointer;
-        }
-
-        a {
-            font-size: 14px;
-        }
-
-        p {
-            font-size: 15px;
-            color: #12284c;
-        }
-
-        #hide-overlay {
-            color: #12284c;
-            border: 2px solid #12284c;
-            border-radius: 10px;
-            width: 45%;
-            margin: auto;
-            padding: 10px;
-            font-size: 20px;
-        }
-
-        #hide-overlay:hover {
-            cursor: pointer;
-            background-color: #12284c;
-            color: white;
-        }
-
-        .icons img {
-            width: 25px;
-            margin-left: -5px;
-            color: #12284c;
-            height: 25px;
-        }
-    </style>
 </head>
 
 <body>
-
-
-    <!-- Navbar starts here -->
-
-    <div id="navbar">
-        <div id="navigation-links">
-            <div class="heading_one">
-                <div>
+     <!-- nav bar -->
+     <div id="main_nav">
+        <dvi class="top_part">
+            <div class="location">
+                <a href="https://www.google.com/maps">
                     <i class="fa-solid fa-location-dot"></i>
-                </div>
-                <div> <a href=""> STORE & SPA LOCATOR </a></div>
-            </div>
-            <div class="heading_one">
-                <div>
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-                <div> <a href=""> WISHLIST </a></div>
-            </div>
-            <div class="heading_one">
-                <div><i class="fa-solid fa-magnifying-glass"></i></div>
-                <div> <a href="">SEARCH </a></div>
-            </div>
-            <div id="click-log" class="heading_one">
-                <div>
-                    <i class="fa-regular fa-circle-user"></i>
-
-                </div>
-                <div> <a id="showEmailUser" href="signup.html">SIGN IN/UP</a></div>
-            </div>
-            <div class="heading_one" onclick="window.location.href = 'cart.html'">
-                <div>
-                    <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
-                </div>
-                <div> <a href="cart.html">BAG</a></div>
-            </div>
-        </div>
-        <div class="logo"><img
-                src="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/bluemercury-logo_1216x.png?v=1648743182">
-        </div>
-        <div id="shoplink">
-            <!-- <div><button class="productlink"><a href>SHOP</a></button></div> -->
-            <div class="btn1"><button style="background-color:white ;" id="disappear"><a href="product.html" id="shop"
-                        class="heading_a">SHOP</a></button></div>
-            <div><button class="productlink"><a href="product.html" target="_blank" id="go-to-new">NEW!</a></button>
-            </div>
-            <div><button class="productlink"><a href="product.html" target="_blank">BRANDS</a></button></div>
-            <div><button class="productlink"><a href="product.html" target="_blank">EXPLORE</a></button></div>
-            <div><button class="productlink"><a href="product.html" target="_blank">EVENTS</a></button></div>
-            <div><button class="productlink"><a href="product.html" target="_blank">BLUEREWARDS</a></button></div>
-            <div><button class="productlink"><a href="product.html" target="_blank">HOLIDAYGIFTGUIDE</a></button></div>
-        </div>
-
-        <!-- Hover Start -->
-        <div id="shop_hover">
-            <div id="first" class="one">
-                <p><a href="product.html">SKIN CARE</a></p>
-                <p><a href="product.html">MAKEUP</a></p>
-                <p><a href="product.html">BATH AND BODY</a></p>
-                <p><a href="product.html">HAIR</a></p>
-                <p><a href="product.html">SUN AND TAN</a></p>
-                <P><a href="product.html">SCENTS & HOME</a></P>
-                <P><a href="product.html">MEN</a></P>
-                <P><a href="product.html">GIFTS</a></P>
-            </div>
-            <div id="second" class="two"></div>
-            <div id="third" class="one">
-                <P style="color:rgba(18, 40, 76, 0.6);">BY CATEGORY</P>
-                <P><a href="product.html">Shop All</a></P>
-                <P><a href="product.html">Cleaners</a></P>
-                <p><a href="product.html">Eye Care</a></p>
-                <p><a href="product.html">Masks</a></p>
-                <p><a href="product.html">Sets</a></p>
-                <p><a href="product.html">Sun Care</a></p>
-                <p><a href="product.html">Tools & Accessories</a></p>
-            </div>
-            <div id="fourth" class="one">
-                <p style="color:rgba(18, 40, 76, 0.6);">FEATURED</p>
-                <p><a href="product.html">Best Seller</a></p>
-                <p><a href="product.html">New Arrivals</a></p>
-                <p><a href="product.html">Anti-Aging</a></p>
-                <p><a href="product.html">Antioxidants</a></p>
-                <p><a href="product.html">Skincare Tools</a></p>
-                <p><a href="product.html">Supplements</a></p>
-                <p><a href="product.html">Travel Size</a></p>
-                <p><a href="product.html">Vitamin C</a></p>
-            </div>
-            <div id="fifth" class="one">
-                <div>
-                    <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/cooling_eye_gel_nav_114x114.jpg?v=1626722614"
-                        alt="">
-                    <p><a href="">M-61</a></p>
-                    <p><a href="">Hydraboosyt Cooling Eye Gel</a></p>
-                    <br />
-                </div>
-                <div>
-                    <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/kiehl_s_nav_feature_114x114.jpg?v=1629317112"
-                        alt="">
-                    <p><a href="">Kiehl's</a></p>
-                    <spanp><a href="">Retinol daily Microdose Serum</a></span>
-                </div>
-            </div>
-        </div>
-        <!-- Hover Ends -->
-    </div>
-
-
-
-
-    <!-- Navbar ends here -->
-
-
-    <!-- <button class="btn">
-        <a href="product.html" target="_blank">Go to Home</a>
-
-    </button>
-
-    <button class="btn">
-        <a href="cart.html" target="_blank">Go to Cart </a>
-    </button> -->
-
-    <div id="showPrice">
-        <h2>Total Items <span id="cart-count"> 0</span></h2>
-        <h2>Total Price $ <span id="cart-price">0</span></h2>
-
-        <a id="buy" href="payment.html">BUY The PRODUCT</a>
-    </div>
-
-    <form id="form1" action="">
-        <input id="promocode" type="text" placeholder="Apply Promocode ">
-        <input id="submit2" type="submit" value="Submit" />
-    </form>
-
-    <br />
-    <div id="parent">
-
-    </div>
-
-
-
-    <!-- footer html starts -->
-    <footer class="footer-part">
-        <div class="newsletter">
-            <p>Get Expert Beauty Insight & Offers</p>
-            <form id="footer-mail-collect" onsubmit="overlaymsg(event)">
-
-                <input class="footer-mail e-mail" id="newsletter-mail-input" name="e-mail" type="email"
-                    placeholder="EMAIL ADDRESS" />
-                <button id="arrow-submit-btn" type="submit">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                </button>
-            </form>
-            <p>
-                By continuing, you agree to Bluemercury's <br>
-                Privacy Practices
-            </p>
-            <p class="icons">
-                <a href="https://twitter.com/bluemercury" target="_blank">
-                    <!-- <i class="fa-brands fa-youtube"></i> -->
-                    <img src="data:image/png;base64,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"
-                        alt="">
+                  STORE & SPA LOCATOR
                 </a>
-                <a href="https://www.pinterest.com/bluemercury/" target="_blank">
-                    <!-- <i class="fa-brands fa-pinterest-p"></i></a> -->
-                    <img src="data:image/png;base64,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"
-                        alt="">
-                    <a href="https://facebook.com/bluemercury">
-                        <!-- <i class="fa-brands fa-facebook-f"></i> -->
-                        <img src="https://cdn-icons-png.flaticon.com/512/59/59439.png" alt="">
-                    </a>
-                    <a href="https://instagram.com/bluemercury" target="_blank">
-                        <!-- <i class="fa-brands fa-instagram"></i> -->
-                        <img src="data:image/png;base64,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"
-                            alt="">
+            </div>
+            <div class="logo">
+                <a href="index.html">
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/bluemercury-logo_1216x.png?v=1648743182" 
+                    alt="bluemercury"
+                  />
+                </a>
+            </div>
+            <div class="nav_links">
+                <ul class="navItem">
+                    <li>
+                        <a href="" class="navlink">
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            WISHLIST
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="navlink">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                            SEARCH
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="navlink">
+                            <i class="fa fa-user-circle"></i>
+                            SIGN IN/UP
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="navlink">
+                            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                            BAG
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </dvi>
+        <div class="bottom_part">
+            <ul class="menu">
+              <li class="dropdown">
+                <a class="navlink"> SHOP </a>
+              </li>
+              <li>
+                <a href="" class="navlink"> NEW! </a>
+              </li>
+              <li>
+                <a href="https://bluemercury.com/pages/brands" class="navlink">
+                  BRANDS
+                </a>
+              </li>
+              <li>
+                <a href="https://bluemercury.com/pages/explore" class="navlink">
+                  EXPLORE
+                </a>
+              </li>
+              <li>
+                <a href="https://bluemercury.com/pages/events" class="navlink">
+                  EVENTS
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://bluemercury.com/pages/bluerewards" class="navlink"
+                >
+                  BLUEWARDS
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://bluemercury.com/pages/bluerewards" class="navlink"
+                >
+                  ROUTINE REBOOT
+                </a>
+              </li>
+            </ul>
+        </div> 
+    </div>
 
-                    </a>
-                    <a href="https://www.youtube.com/channel/UCrgUXfV7IIFllEQMbzd9J3A" target="_blank">
-                        <!-- <i class="fa-brands fa-youtube"></i -->
-                        <img src="data:image/png;base64,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"
-                            alt="">
-                    </a>
-            </p>
-            <p>Copyright 2023 bluemercury. All Rights Reserved.</p>
-        </div>
-
-        <div class="footer-navwrap">
-            <div class="bluemercury-links">
-                <h2>Bluemercury</h2>
-                <ul>
-                    <li>
-                        <a href="#">Our Company</a>
-                    </li>
-                    <li>
-                        <a href="#">Store Locator</a>
-                    </li>
-                    <li>
-                        <a href="#">In-Store & Online Events</a>
-                    </li>
-                    <li>
-                        <a href="#">Spa Menu</a>
-                    </li>
-                    
-                    <li>
-                        <a href="#">Careers</a>
-                    </li>
-                    <li>
-                        <a href="#">Vendor Submissions</a>
-                    </li>
-                    <li>
-                        <a href="#">Diversity & Inclusion</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="myaccount-links">
-                <h2>My Account</h2>
-                <ul>
-                    <li>
-                        <a href="#">My Account</a>
-                    </li>
-                    <li>
-                        <a href="#">BlueRewards</a>
-                    </li>
-                    <li>
-                        <a href="#">Gift Card Balance Checker</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="customerservice-links">
-                <h2>Customer Service</h2>
-                <ul>
-                    <li>
-                        <a href="#">Contact Us</a>
-                    </li>
-                    <li>
-                        <a href="#">Help & FAQ</a>
-                    </li>
-                    <li>
-                        <a href="#">Shipping, Returns & Exchanges</a>
-                    </li>
-                    <li>
-                        <a href="#">Gift Cards</a>
-                    </li>
-                    <li>
-                        <a href="#">Offers & Promotions</a>
-                    </li>
-                    <li>
-                        <a href="#">Klarna</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="resources-links">
-                <h2>Resources</h2>
-                <ul>
-                    <li>
-                        <a href="#">Terms & Conditions</a>
-                    </li>
-                    <li>
-                        <a href="#">Privacy Notice</a>
-                    </li>
-                    <li>
-                        <a href="#">Do Not Sell My Personal Information</a>
-                    </li>
-                    <li>
-                        <a href="#">CA Privacy Rights</a>
-                    </li>
-                    <li>
-                        <a href="#">Accessibility</a>
-                    </li>
-                    <li>
-                        <a href="#">Affiliate Program</a>
-                    </li>
-                </ul>
+  <!-- navbar end -->
+   
+    <div id="body">
+        <h1 id="your_bag">YOUR BAG</h1>
+        <p id="no_items">Your cart(No. of items)</p>
+        <div id="cart_header">
+            <p>Ready to Ship</p>
+            <div>
+                <p>Price</p>
+                <p>Quantity</p>
+                <p>Total</p>
             </div>
         </div>
-    </footer>
+        <hr id="horizontal_line">
+<!-- added cart data will be appended here -->
+<div id="cart_container"></div>
+<div id="offers">
+  <div>
+    <img id="pro" src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-635494263008-1_825x.jpg?v=1675401099" alt="">
+    <div>
+        <h3>SkinCeuticals <br>
+            C E Ferulic</h3>
+      <h4>182$</h4>
+      <h4>-     1     +</h4>
+      <h4>182$</h4>
+    </div>
+  </div>
+  <p>Additional Offerings</p>
+  <p>Based on the items in your bag, you've qualified for the following offers.</p>
+</div>
+<hr>
+       
+        <div id="subtotal">
+            <h3 id="subtotal_price">Subtotal(Price)</h3>
+            <p>Shipping,Taxes,Beauty Cards, and additional discounts applied at the checkout</p>
+        </div>
 
+        <a href="checkout.html">
+            <div id="div"><button id="checkout_button">CHECKOUT</button></div>
+        </a>
 
+        <div id="mystery_samples">
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/surprise-mystery-samples-2-1_2_small.jpg?v=1677004647"
+                    alt="">
+                <div>
+                    <h3>MYSTERY SAMPLES</h3>
+                    <p><u>Add 3 Samples</u></p>
+                </div>
+
+            </div>
+            <div>
+                <img id="pic" src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/surprise-mystery-samples-3_2.jpg?v=1677004698"
+                    alt="">
+                <h3>MYSTERY SAMPLES</h3>
+            </div>
+            <div>
+                <img id="pic" src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/surprise-mystery-samples-3_2.jpg?v=1677004698"
+                    alt="">
+                <h3>MYSTERY SAMPLES</h3>
+            </div>
+            <div>
+                <img id="pic" src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/surprise-mystery-samples-3_2.jpg?v=1677004698"
+                    alt="">
+                <h3>MYSTERY SAMPLES</h3>
+            </div>
+        </div>
+    </div>
+  <!-- footer -->
+  <footer class="footer-part">
+    <div class="newsletter">
+      <p>Get Expert Beauty Insight & Offers</p>
+      <form id="footer-mail-collect" onsubmit="overlaymsg(event)">
+        <div id="mail-submission-success-overlay">
+          <div>
+            <img
+              src="https://thumbs.gfycat.com/ShyCautiousAfricanpiedkingfisher-max-1mb.gif"
+              alt="successful"
+            />
+            <p id="success-msg">You will hear from us soon!</p>
+            <div onclick="overlayMsgHide()" id="hide-overlay">Done</div>
+          </div>
+        </div>
+        <input
+          class="footer-mail e-mail"
+          id="newsletter-mail-input"
+          name="e-mail"
+          type="email"
+          placeholder="EMAIL ADDRESS"
+        />
+        <button id="arrow-submit-btn" type="submit">
+          <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        </button>
+      </form>
+      <p>
+        By continuing, you agree to Bluemercury's
+      </p>
+      <a href="index.html">Privacy Note</a>
+      <p class="icons">
+        <a href="https://twitter.com/bluemercury" target="_blank"
+          ><i class="fa fa-twitter" aria-hidden="true"></i
+        ></a>
+        <a href="https://www.pinterest.com/bluemercury/" target="_blank"
+          ><i class="fa fa-pinterest-p" aria-hidden="true"></i
+        ></a>
+        <a href="https://facebook.com/bluemercury" target="_blank"
+          ><i class="fa fa-facebook" aria-hidden="true"></i
+        ></a>
+        <a href="https://instagram.com/bluemercury" target="_blank"
+          ><i class="fa fa-instagram" aria-hidden="true"></i
+        ></a>
+        <a
+          href="https://www.youtube.com/channel/UCrgUXfV7IIFllEQMbzd9J3A"
+          target="_blank"
+          ><i class="fa fa-youtube-play" aria-hidden="true"></i
+        ></a>
+      </p>
+      <p>Copyright 2021 bluemercury. All Rights Reserved.</p>
+    </div>
+
+    <div class="footer-navwrap">
+      <div class="bluemercury-links">
+        <h2>Bluemercury</h2>
+        <ul>
+          <li>
+            <a href="#">Our Company</a>
+          </li>
+          <li>
+            <a href="#">Store Locator</a>
+          </li>
+          <li>
+            <a href="#">In-Store & Online Events</a>
+          </li>
+          <li>
+            <a href="#">Spa Menu</a>
+          </li>
+          <li>
+            <a href="#">Press</a>
+          </li>
+          <li>
+            <a href="#">Careers</a>
+          </li>
+          <li>
+            <a href="#">Vendor Submissions</a>
+          </li>
+          <li>
+            <a href="#">Diversity & Inclusion</a>
+          </li>
+        </ul>
+      </div>
+      <div class="myaccount-links">
+        <h2>My Account</h2>
+        <ul>
+          <li>
+            <a href="#">My Account</a>
+          </li>
+          <li>
+            <a href="#">BlueRewards</a>
+          </li>
+          <li>
+            <a href="#">Gift Card Balance Checker</a>
+          </li>
+        </ul>
+      </div>
+      <div class="customerservice-links">
+        <h2>Customer Service</h2>
+        <ul>
+          <li>
+            <a href="#">Contact Us</a>
+          </li>
+          <li>
+            <a href="#">Help & FAQ</a>
+          </li>
+          <li>
+            <a href="#">Shipping, Returns & Exchanges</a>
+          </li>
+          <li>
+            <a href="#">Gift Cards</a>
+          </li>
+          <li>
+            <a href="#">Offers & Promotions</a>
+          </li>
+          <li>
+            <a href="#">Klarna</a>
+          </li>
+        </ul>
+      </div>
+      <div class="resources-links">
+        <h2>Resources</h2>
+        <ul>
+          <li>
+            <a href="#">Terms & Conditions</a>
+          </li>
+          <li>
+            <a href="#">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="#">Accessiblility</a>
+          </li>
+          <li>
+            <a href="#">COVID-19 Updates</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
 
 </body>
 
+
 </html>
 
-<script>
-    //  localStorage.setItem("user",elem.firstName)  
-    let x = localStorage.getItem("user");
 
-    if (x == null) {
-        document.getElementById("showEmailUser").textContent = "SIGN IN/UP";
-    } else {
-        document.getElementById("showEmailUser").textContent = x;
-    }
-
-
-
-
-
-
-    let sum = 0;
-    document.querySelector("form").addEventListener("submit", Applydiscount);
-    let cartArr = JSON.parse(localStorage.getItem("cart")) || [];
-    displayProducts();
-
-
-    function displayProducts() {
-        document.getElementById("cart-count").textContent = cartArr.length;
-
-        cartArr.map(function (elem, index) {
-
-            var div = document.createElement("div");
-
-
-
-            var image = document.createElement("img");
-            image.setAttribute("class", "imgCart")
-            image.setAttribute("src", elem.image_url)
-            image.setAttribute("alt", elem.name);
-
-            var name = document.createElement("h5");
-            name.setAttribute("class", "name");
-            name.textContent = elem.name;
-
-
-            var price = document.createElement("p");
-            price.setAttribute("class", "price");
-            price.textContent = "$ " + elem.price;
-            sum += elem.price;
-
-            console.log(image, name, price);
-
-            var Remove = document.createElement("button");
-            Remove.setAttribute("class", "Remove");
-            Remove.textContent = "Remove Item From Cart";
-            Remove.addEventListener("click", function () {
-                rem(elem, index);
-            })
-            document.getElementById("cart-price").innerText = sum;
-
-            div.append(image, name, price, Remove);
-
-            document.getElementById("parent").append(div);
-        })
-    }
-
-    function rem(elem, index) {
-        document.querySelector("#parent").textContent = "";
-        cartArr.splice(index, 1);
-        sum = sum - elem.price;
-        localStorage.setItem("cart", JSON.stringify(cartArr));
-        displayProducts();
-        window.location.reload();
-    }
-
-
-
-    function Applydiscount() {
-        event.preventDefault()
-        var promo = document.getElementById("promocode").value;
-        if (promo == "masai30") {
-            sum = sum - ((sum * 30) / 100);
-            alert("Congrats You Received 30% Discount")
-        }
-        document.getElementById("cart-price").textContent = sum;
-        document.getElementById("promocode").value = "";
-    }
-
-
-    var images = document.getElementsByTagName("img");
-    for (var i = 0; i < images.length; i++) {
-        var image = images[0];
-        image.onclick = function (event) {
-            window.location.href = this.id + 'index.html';
-        };
-    }
-</script>
+<script src="./cart.js"></script>
