@@ -1,331 +1,377 @@
-/**************************
-Start: Cart Section
-**************************/
-
-.cart {
-  width: 85%;
-  height: 85%;
-  /* background-color:black; */
-  margin: auto;
+* {
+    margin: 0px;
+    padding: 0px;
 }
 
-.cart_1 {
-  width: 100%;
-  font-size: 80px;
+body {
+    font-family: Montserrat light, sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin: 10px 0px 0px 0px;
+}
+a {
+    
+    color: #12284c;
+    margin: 0;
+    padding: 0;
 }
 
-.cart_container {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  letter-spacing: .2em;
-  /* padding-left: 30px; */
-  text-transform: uppercase;
-  color: #12284c;
-  font-size: 30px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+.location a {
+    text-decoration: none;
+    color: #12284c;
 }
-/* blue rewards */
-
-.reward_login {
-  height: 70px;
-  width: 100%;
-  margin: 20px auto;
-  background-color: #F4FAFC;
-  display: flex;
+#main_nav{
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    font-family: Montserrat Medium, sans-serif;
+    color: #12284C;
+    letter-spacing: 1px;
+    
 }
-.rewards_blue {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 25px;
-  color: #12284c;
-  line-height: 34.65px;
+.top_part{
+    display: flex;
+    margin-bottom: 15px;
+    margin-left: 30px;
+    margin-right: 40px;
+    font-size: 10px;
 }
-
-.rewards {
-  color: #12284c;
-  line-height: 34.65px;
+.top_part > div {
+    margin: 2px;
+    flex-basis: 100%;
 }
-
-.free_Shipping {
-  padding-top: 30px;
-  margin-left: 10px;
+.top_part a {
+    text-decoration: none;
+}
+.bottom_part{
+    font-size: 14px;
+}
+.bottom_part a {
+    text-decoration: none;
 }
 
-.log_in_cart {
-  padding-top: 30px;
-  margin-left: 150px;
-  font-size: 15px;
+.navItem{
+    display: flex;
+    width: 80%;
+    float: right;
+    justify-content: space-around;
+    align-items: center;
+}
+.navItem li a i,
+.top_part .location a i {
+    font-size: 20px;
+}
+ul {
+    list-style-type: none;
+}
+.logo img {
+    min-width: 190px;
+    max-width: 200px;
+    margin-left: 150px;
+    margin-top: 15px;
 }
 
-.join_now {
-  padding-top: 15px;
-  margin-left: 50px;
-}
-
-.join_now > button {
-  height: 40px;
-  width: 180px;
-  background-color: rgb(13, 13, 65);
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  font-size: 15px;
-}
-
-.your_Cart {
-  font-size: 20px;
-  /* margin-left: 0px; */
-  font-weight: 400;
-  font-family: "Montserrat", sans-serif;
-  float: left;
-}
-
-#empty_bag {
-  float: right;
-}
-
-/* you cart */
-.gift {
-  display: flex;
-}
-
-.checkbox {
-  margin-left: 45px;
-  height: 20px;
-  width: 20px;
-  padding: 0;
-}
-
-.gift_Order {
-  padding-bottom: 20px;
-}
-
-.order {
-  padding-left: 2%;
-  font-family: "Montserrat Semi Bold", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  width: 100%;
-}
-
-.hidden {
-  padding-left: 8%;
-  font-family: "Montserrat Light", sans-seri;
-  font-weight: 400;
-  line-height: 23.1px;
-  font-size: 14px;
-}
-
-/* ready to ship */
-
-#ready_shift {
-  height: 50px;
-  width: 100%;
-  display: flex;
-  border-bottom: 2px solid #dcdcdc;
-}
-
-.readytoshift {
-  width: 50%;
-  font-size: 20px;
-  font-family: "Montserrat", sans-serif;
-  padding: 10px;
-  padding-top: 10px;
-  font-weight: 400;
-}
-
-.price {
-  float: left;
-  width: 20%;
-  text-align: center;
-  font-size: 15px;
-  font-family: "Montserrat", sans-serif;
-  padding: 10px;
-  font-weight: 400;
-  /* background-color: lightblue; */
-}
-
-.quantity {
-  float: left;
-  font-size: 15px;
-  width: 15%;
-  font-family: "Montserrat", sans-serif;
-  padding: 10px;
-  padding-top: 10px;
-  font-weight: 400;
-  /* background-color: lavenderblush; */
-  text-align: center;
-}
-
-.total {
-  /* float: left; */
-  width: 15%; 
-  font-size: 15px;
-  text-align: right;
-  font-family: "Montserrat", sans-serif;
-  padding: 10px;
-  font-weight: 400;
-  /* background-color: lightblue; */
-}
-
-#line {
-  width: 100%;
-  border-bottom: 1px solid #dcdcdc;
-}
-
-#cart_Bag {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 150px;
-  /* background-color: lawngreen; */
-  border-bottom: 2px solid #dcdcdc;
-}
-
-#Offerings {
-  font-size: 15px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: lighter;
-}
-
-#Offer {
-  font-family: "Montserrat", sans-serif;
-  font-size: 10px;
-  font-weight: lighter;
-}
-
-/*  sampe product */
-
-#sampleProduct {
-  border-bottom: 1px solid #dcdcdc;
-  width: 100%;
-  margin: 20px 10px 0px 0px;
-  padding-top: 20px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  border-top: 1px solid #dcdcdc;
-  flex-direction: row;
-}
-
-.img1 {
-  width: 25%;
-  display: flex;
-}
-
-.sample_img1 {
-  height: 94px;
-  margin-right: 5px;
-  width: 95px !important;
-  display: block;
-  width: 10%;
-}
-
-.complimentary {
-  font-family: "Montserrat Medium", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  letter-spacing: 0.2px;
-  text-transform: uppercase;
-  color: #12284c;
-  font-weight: 400;
-  position: relative;
-  margin-bottom: 12px;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.footer {
-  padding-top: 40px;
-  height: 100px;
-  width: 100%;
-  /* border:1px solid black; */
-  display: flex;
-  flex: wrap;
-}
-
-.shipping {
-  /* margin-top: 10px; */
-  height: 50px;
-  width: 45%;
-  background-color: #f4fafc;
-  margin-left: 55%;
-  /* display: block; */
-
-  text-align: right;
-  font-family: "Montserrat Medium", sans-serif;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 23.1px;
-  color: #12284c;
-  padding: 13px 20px 13px 0;
-}
-
-#cart_total {
-  margin-bottom: 8px;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 2px;
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  font-family: "Montserrat Medium", sans-serif;
-  text-align: right;
-  color: #12284c;
-}
-
-.tax {
-  font-weight: inherit;
-  text-align: right;
-  font-family: "Montserrat Medium", sans-serif;
-  font-size: 12px;
-}
-
-#checkout {
-  text-transform: uppercase;
-  border: 0px;
-  width: 30%;
-  margin-top: 21px;
-  float: right;
-  margin-bottom: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 40px;
-  color: white;
-  font-weight: 900;
-  background-color: #12284c;
-  font-family: "Montserrat Light", sans-serif;
-  font-size: 14px;
-  line-height: 23.1px;
-  text-decoration: none;
-}
-
-.clear {
-  clear: both;
-}
-
-.paypal {
-  background-color: #ffc439;
-  border: 0px;
-  text-transform: uppercase;
-  width: 30%;
-  margin-top: 5px;
-  float: right;
-  margin-bottom: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 40px;
-  color: #12284c;
-  font-family: "Montserrat Light", sans-serif;
-  font-size: 14px;
-  line-height: 23.1px;
-}
-
-.paypal-logo {
-    width: 90px;
+.menu{
+    width: 60%;
     margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#slide-text{
+    margin-top: 10px;
+}
+.carousel-section {
+    position: relative;
+    
+}
+
+.announcement-bar {
+    /* position: sticky; */
+    position: relative;
+    top: 0px;
+    width: 100%;
+    /* z-index: 5; */
+    margin: auto;
+    background-color: rgb(215, 235, 242);
+    color: rgb(0, 0, 0);
+    padding: 1px;
+    height: 25px;
+}
+#body {
+    margin: 140px 100px 0px 70px;
+    font-family: Montserrat Light, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #12284c;
+    background: #fff;
+    line-height: 1.65;
+    overflow-x: hidden;
+}
+
+#your_bag {
+    font-weight: 550;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    font-size: 40px
+}
+
+#cart_header {
+    font-size: large;
+    color: #12284c;
+    border: 0px solid black;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#cart_header>p {
+    font-size: x-large;
+}
+
+#cart_header>div {
+    border: 0px solid black;
+    width: 55%;
+    display: flex;
+    justify-content: space-around;
+    height: 90%;
+}
+
+#no_items {
+    font-size: large;
+}
+
+#mystery_samples {
+    display: flex;
+    justify-content: space-between;
+    line-height: 20px;
+}
+
+#mystery_samples>div {
+    display: flex;
+}
+
+#offers {
+
+    margin-top: 100px;
+}
+
+#subtotal {
+    width: max-content;
+    margin-left: auto;
+    line-height: 16px;
+}
+
+#subtotal>h3 {
+    text-align: end;
+}
+
+#checkout_button {
+    width: 400px;
+    background-color: #12284c;
+    color: white;
+    height: 40px;
+    font-size: large;
+    font-weight: 700;
+    margin-top: 21px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+#div {
+    width: 400px;
+    margin-left: auto;
+}
+
+#dad {
+    display: flex;
+    justify-content: space-between;
+    border: 0px solid red;
+    height: 150px;
+}
+
+#son2 {
+    width: 55%;
+    display: flex;
+    justify-content: space-around;
+    height: 90%;
+    border: 0px solid teal;
+}
+
+#son1 {
+    border: 0px solid black;
+    width: 40%;
+    font-size: smaller;
+    display: flex;
+    gap: 40px;
+}
+
+#son1>img {
+    height: 100%;
+    width: auto;
+    display: block;
+}
+
+#mini_son>p {
+    border: 0px solid black;
+}
+
+#quant {
+    width: 100px;
+    height: 20px;
+    text-align: center;
+}
+
+#remove {
+    width: 100px;
+    height: 40px;
+    border: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/****************************
+Start: Footer part
+****************************/
+
+.footer-part {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 15px 30px;
+    border-top: 2px solid #dcdcdc;
+}
+
+.newsletter {
+    flex: 0 1 auto; /* SOMETHING IS GOING WRONG ON DECREASING WINDOW WIDTH */
+    margin: 0px 20px;
+    max-width: 50ch;
+    min-width: 30ch;
+    line-height: 30px;
+}
+
+.newsletter > .icons {
+    display: flex;
+    flex: 1 1 0%;
+    justify-content: space-between;
+    max-width: 90%;
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #12284c;
+}
+
+.footer-navwrap {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 0;
+    justify-content: space-between;
+    min-width: 600px; /* CHANGE THIS IN FUTURE TO MAKE IT PROPERLY RESPONSIVE*/
+}
+
+.footer-navwrap > * {
+    justify-items: space-between;
+    flex-basis: 100%;
+    margin-bottom: 5px;
+    color: #12284c;
+    font-weight: normal;
+}
+
+.footer-navwrap h2 {
+    font-weight: normal;
+    font-size: 14px;
+    font-family: Montserrat light, sans-serif;
+    text-transform: uppercase;
+}
+
+.footer-navwrap > div > * > * {
+    margin: 16px auto;
+}
+
+.footer-navwrap ul,
+.footer-navwrap li a {
+    color: #12284c;
+    list-style-type: none;
+    padding: 0px;
+    text-decoration: none;
+}
+
+.footer-mail {
+    width: 90%;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid #12284c;
+}
+
+.footer-mail:focus {
+    outline: none;
+}
+
+#arrow-submit-btn {
+    border: none;
+    outline: none;
+    margin: 0px;
+    padding: 0px;
+    height: 30px;
+    background-color: white;
+}
+
+#arrow-submit-btn:hover {
+    cursor: pointer;
+}
+
+#mail-submission-success-overlay {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    cursor: pointer;
+    text-align: center;
+    color: #12284c;
+    transition: 2s;
+}
+
+#mail-submission-success-overlay > div {
+    font-size: 20px;
+    width: 300px;
+    height: 300px;
+    padding: 50px;
+    margin: 5% auto;
+    background-color: white;
+    border-radius: 15px;
+}
+
+#mail-submission-success-overlay > div > img {
+    width: 50px;
+    margin-top: 50px;
+}
+
+#hide-overlay {
+    color: #12284c;
+    border: 2px solid #12284c;
+    border-radius: 10px;
+    width: 45%;
+    margin: auto;
+    /* height: 40px; */
+    padding: 10px;
+    font-size: 20px;
+}
+
+#hide-overlay:hover {
+    cursor: pointer;
+    background-color: #12284c;
+    color: white;
+}
+
+.footer-mail:focus {
+    background-color: white;
 }
