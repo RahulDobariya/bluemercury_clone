@@ -77,12 +77,6 @@ ul {
     display: flex;
     justify-content: space-between;
 }
-.menu li:hover {
-    border-bottom: 3px solid #12284c;
-    transition: .1s;
-}
-
-
 
 #slide-text{
     margin-top: 10px;
@@ -120,12 +114,13 @@ Start: best seller part
     width: 85%;
     margin: auto;
 }
+
+.cards-wrapper a{
+    text-decoration: none;
+}
 .card{
     /* margin: 0 .5em; */
     width: 25%;
-}
-.card a {
-    text-decoration: none;
 }
 .image-wrapper{
     height: 20vw;
@@ -253,12 +248,11 @@ Start: Footer part
 }
 
 .newsletter {
-    flex: 0 1 auto;
-    margin: 0px 20px;
-    /* max-width: 50ch;
-    min-width: 30ch; */
+    flex: 0 1 auto; /* SOMETHING IS GOING WRONG ON DECREASING WINDOW WIDTH */
+    margin: 0px 20px 0 15px;
+    max-width: 50ch;
+    min-width: 30ch;
     line-height: 30px;
-    width: 25%;
 }
 
 .newsletter > .icons {
@@ -277,7 +271,8 @@ Start: Footer part
     flex-direction: row;
     flex: 1 1 0;
     justify-content: space-between;
-    min-width: 600px; /* CHANGE THIS IN FUTURE TO MAKE IT PROPERLY RESPONSIVE*/
+    min-width: 600px;
+    margin-left: 50px;
 }
 
 .footer-navwrap > * {
@@ -331,56 +326,7 @@ Start: Footer part
     cursor: pointer;
 }
 
-#mail-submission-success-overlay {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    display: none;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 2;
-    cursor: pointer;
-    text-align: center;
-    color: #12284c;
-    transition: 2s;
-}
 
-#mail-submission-success-overlay > div {
-    font-size: 20px;
-    width: 300px;
-    height: 300px;
-    padding: 50px;
-    margin: 5% auto;
-    background-color: white;
-    border-radius: 15px;
-}
-
-#mail-submission-success-overlay > div > img {
-    width: 50px;
-    margin-top: 50px;
-}
-
-#hide-overlay {
-    color: #12284c;
-    border: 2px solid #12284c;
-    border-radius: 10px;
-    width: 45%;
-    margin: auto;
-    /* height: 40px; */
-    padding: 10px;
-    font-size: 20px;
-}
-
-#hide-overlay:hover {
-    cursor: pointer;
-    background-color: #12284c;
-    color: white;
-}
 
 .footer-mail:focus {
     background-color: white;
@@ -393,17 +339,23 @@ Start: MEDIA QUERIES
 @media only screen and (max-width: 700px) {
     
     .navItem{
+        
+        flex-direction: column;
+        font-size: 13px;
+        margin-top: 12px;
+    }
+    .navItem i{
         display: none;
+        
     }
     .menu{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
+        display: none;
     }
+    
     .logo img {
         min-width: 80px;
-        max-width: 150px;
-        margin-left: -25px;
+        max-width: 130px;
+        margin-left: -100px;
         margin-top: 15px;
         align-items: center;
     }
@@ -412,14 +364,17 @@ Start: MEDIA QUERIES
         flex-direction: column;
         align-items: center;
     }
-    .image-wrapper{
+    .link{
         align-items: center;
+        
+    }
+    .link .image-wrapper{
+        margin-left: 70px;
     }
     .card{
         /* margin: 0 .5em; */
         width: 100%;
         align-items: center;
-
     }
     .card-body{
         text-align: center;
@@ -485,17 +440,12 @@ Start: MEDIA QUERIES
     .footer-top .footer-card{
         margin-bottom: 40px;
     }
-
-     .footer-navwrap{
+    .footer-navwrap{
         display: none;
     }
-    /* .footer-part{
-        background: #12284C;
-    } */
     .footer-part .icons{
         display: flex;
     }
-
     .newsletter{
         display: flex;
         flex-direction: column;
@@ -503,6 +453,4 @@ Start: MEDIA QUERIES
         text-align: center;
     }
     
-    
 }
-
