@@ -4,190 +4,343 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<style>
-    #upper-part {
-        display: flex;
-        justify-content: space-between;
-        
-    }
-    #upper-part h2{
-        margin-left: 26%;
-    }
-    #upper-part h4{
-        margin-right: 12%;
-    }
-    #upper-part h4 select{
-        width: 140px;
-        height: 45px;
-    }
-    #grandparent-box{
-        display: flex;
-        margin-left: 12%;
-    }
-    #filter{
-        width: 300px;
-        
-    }
-    #Parent-box{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        width: 100%;
-        
-    }
-</style>
-<body>
-    <div id="upper-part">
-        <h2>FLORAL FRAGRANCES</h2>
-        <h4>SORT BY <select id="sort">
-            <option value="Featured">Featured</option>
-            <option value="New Arrivals">New Arrivals</option>
-            <option value="Best Sellers">Best Sellers</option>
-            <option value="price">Price, Low to High</option>
-            <option value="price">Price, High to Low</option>
-            
-        </select></h4>
-    </div>
-    <div id="grandparent-box">
-        <div id="filter">
-            <fieldset>
-                <legend>Brand</legend>
-                <div>
-                    <input type="checkbox" >
-                    <label for="Lake & Skye">LAKE & SKYE</label>
-                </div>
-            </fieldset>
-        </div>
-        <div id="Parent-box">
-            <div class="childe-box">
-                <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-size-100ml-690251126668-1_288x288.jpg?v=1675120444" alt="">
-                <h5>JO MALONE LONDON</h5>
-                <p>Scarlet Poppy Cologne Intence</p> 
-                <p class="price">$160-$220</p>
-            </div>
-            <div class="childe-box">
-                <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-size-17oz50ml-3473311931603-1_288x288.jpg?v=1678267276" alt="">
-                <h5>SISLEY-PARIS</h5>
-                <p>L'Eau Revee D'Isa</p> 
-                <p class="price">$115-$195</p>
-            </div>
-            <div class="childe-box">
-                <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-3700431444394-1_288x288.jpg?v=1675874501" alt="">
-                <h5>DIPTYQUE</h5>
-                <p>Do Son Eau De Parfum</p> 
-                <p class="price">$205</p>
-            </div>
-            <div class="childe-box">
-                <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-size-100oz34ml-690251128341-1_288x288.jpg?v=1678180119" alt="">
-                <h5>JO MALONE LONDON</h5>
-                <p>Nashi Blossom Cologne</p> 
-                <p class="price">$112-$158</p>
-            </div>
-            <div class="childe-box">
-                <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-size-34oz-888066000079-1_288x288.jpg?v=1675358066" alt="">
-                <h5>TOM FORD</h5>
-                <p>Black Orchid Eau De Parfum</p> 
-                <p class="price">$150-$215</p>
-            </div>
-            <div class="childe-box">
-                <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-3700431435002-1_288x288.jpg?v=1672881020" alt="">
-                <h5>DIPTYQUE</h5>
-                <p>Eau Rose Eau De Parfum 75</p> 
-                <p class="price">$205</p>
-            </div>
-            <div class="childe-box">
-                <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-850032889285-1_288x288.jpg?v=1677622354" alt="">
-                <h5>THE MAKER</h5>
-                <p>Wild Eau De Parfum</p> 
-                <p class="price">$175</p>
-            </div>
-            <div class="childe-box">
-                <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-size-17floz50ml-087327013753-1_288x288.jpg?v=1677625410" alt="">
-                <h5>LAKE & SKYE</h5>
-                <p>Santal Gray Eau DE Parfum</p> 
-                <p class="price">$36-$98</p>
-            </div>
-            <div class="childe-box">
-                <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-size-100ml-888066098878-1_288x288.jpg?v=1675279204" alt="">
-                <h5>TOM FORD</h5>
-                <p>Lost Cherry Eau De Parfum</p> 
-                <p class="price">$75-$570</p>
-            </div>
-            <div class="childe-box">
-                <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-850039151040-1_288x288.jpg?v=1677622136" alt="">
-                <h5>ELLIS BROOKLYN</h5>
-                <p>Apres Essentials Gift Set</p> 
-                <p class="price">$105</p>
-            </div>
-            <div class="childe-box">
-                <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-3700458603477-1_288x288.jpg?v=1678907668" alt="">
-                <h5>MEMO PARIS</h5>
-                <p>Sintra Eau De Parfum</p> 
-                <p class="price">$300</p>
-            </div>
-            <div class="childe-box">
-                <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-size-30ml-888066117135-1_288x288.jpg?v=1675210784" alt="">
-                <h5>TOM FORD</h5>
-                <p>Rose Prick</p> 
-                <p class="price">$80-$1,250</p>
-            </div>
-            <div class="childe-box">
-                <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-size-defaulttitle-642498015427-1_288x288.jpg?v=1675136295" alt="">
-                <h5>AROMATHERAPY ASSOCIATES</h5>
-                <p>Rose Candel</p> 
-                <p class="price">$72</p>
-            </div>
-            <div class="childe-box">
-                <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-size-25oz-840035200477-1_288x288.jpg?v=1675119107" alt="">
-                <h5>ORIBE</h5>
-                <p>Cote D'Azur Eau De Parfum</p> 
-                <p class="price">$34-$125</p>
-            </div>
-            <div class="childe-box">
-                <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-3701222600517-1_288x288.jpg?v=1668695499" alt="">
-                <h5>HARMETCA</h5>
-                <p>RoseFire Eau De Parfum</p> 
-                <p class="price">$100</p>
-            </div> 
-            <div class="childe-box">
-                <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-size-50ml-8719689206345-1_288x288.jpg?v=1666973153" alt="">
-                <h5>ABEL</h5>
-                <p>Pink Iris Eau De Parfum</p> 
-                <p class="price">$80-$165</p>
-            </div> 
-            <div class="childe-box">
-                <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-195893602933-1_288x288.jpg?v=1673968376" alt="">
-                <h5>BLUEMERCURY</h5>
-                <p>Rrose Eau De Parfum</p> 
-                <p class="price">$38</p>
-            </div> 
-            <div class="childe-box">
-                <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-857457008086-1_288x288.jpg?v=1677621667" alt="">
-                <h5>HARLEM CANDEL CO.</h5>
-                <p>RoseFire Eau De Parfum</p> 
-                <p class="price">$65</p>
-            </div> 
-            <div class="childe-box">
-                <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-690251019588-1_288x288.jpg?v=1675117576" alt="">
-                <h5>JO MALONE LONDON</h5>
-                <p>Red Roses Home Candel</p> 
-                <p class="price">$75</p>
-            </div> 
-            <div class="childe-box">
-                <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/variant_images-size-30ml-690251028405-1_288x288.jpg?v=1675115665" alt="">
-                <h5>JO MALONE LONDON</h5>
-                <p>Peony % Blush</p> 
-                <p class="price">$80-$150</p>
-            </div> 
-            <div class="childe-box">
-                <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-3700431406132-1_288x288.jpg?v=1677590758" alt="">
-                <h5>DIPTYQUE</h5>
-                <p>Outdoor Candel</p> 
-                <p class="price">$430</p>
-            </div>        
-        </div>
-    </div>
+    <title> Skincare | bluemercury</title>
+    <link rel="stylesheet" href="product.css"/>
+    <link rel="icon"  href="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/favicon_48x48.png?v=1614288647">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400;500;600;800&family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,500;1,600;1,800&family=Roboto+Slab:wght@200;400;600;800;900&family=Splash&family=Yantramanav:wght@400;500;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a079df429a.js" crossorigin="anonymous"></script>
 
+  </head>
+<body>
+     
+    <div id="navbar">
+      <div id="navigation-links">
+          <div class="heading_one">
+              <div>
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+              </div>
+              <div> <a href=""> STORE & SPA LOCATOR </a></div>
+          </div>
+          <div class="heading_one">
+              <div>
+                      <i class="fa-regular fa-heart"></i>
+              </div>
+              <div> <a href=""> WISHLIST  </a><span class="cartcount12"id="cart-count11" id="wbtn"></span></div>
+          </div>
+          <div class="heading_one">
+              <div><i class="fa fa-search" aria-hidden="true"></i></div>
+              <div>  <a href="">SEARCH </a></div>
+          </div>
+          <div id="click-log" class="heading_one">
+              <div>
+                <i class="fa fa-user-circle"></i>
+
+              </div>
+              <div> <a id="showEmailUser" href="signup.html">SIGN IN/UP</a></div>
+          </div>
+          <div class="heading_one" onclick=window.location.href ="cart.html">
+              <div>
+                <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                  <a href="cart.html"> BAG <span class="cartcount1"id="cart-count" id="cartbtn" ></span>
+                  </a>
+              </div>
+              <!-- <div>
+                <a href=""></a></div> -->
+          </div>
+      </div>
+      <div class="logo"><img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/blm_36dad4a4-9b14-4ef8-9509-6a593f135aae_416x@2x.png?v=1588538421">
+      </div>
+      <div id="shoplink">
+          <!-- <div><button class="productlink"><a href>SHOP</a></button></div> -->
+          <div class="btn1"><button id="disappear"><a id="shop" class="heading_a">SHOP</a></button></div>
+          <div><button class="productlink"><a href="" target="_blank" id="go-to-new">NEW!</a></button></div>
+          <div><button class="productlink"><a href="" target="_blank">BRANDS</a></button></div>
+          <div><button class="productlink"><a href="" target="_blank">EXPLORE</a></button></div>
+          <div><button class="productlink"><a href="" target="_blank">EVENTS</a></button></div>
+          <div><button class="productlink"><a href="" target="_blank">BLUEREWARDS</a></button></div>
+          <div><button class="productlink1"><a href="" target="_blank">HOLIDAY GIFT GUIDE</a></button></div>
+      </div>
+
+      <!-- Hover Start -->
+      <div id="shop_hover">
+          <div id="first" class="one">
+              <p><a href="">SKIN CARE</a></p>
+              <p><a href="">MAKEUP</a></p>
+              <p><a href="">BATH AND BODY</a></p>
+              <p><a href="">HAIR</a></p>
+              <p><a href="">SUN AND TAN</a></p>
+              <P><a href="">SCENTS & HOME</a></P>
+              <P><a href="">MEN</a></P>
+              <P><a href="">GIFTS</a></P>
+          </div>
+          <div id="second" class="two"></div>
+          <div id="third" class="one">
+              <P style="color:rgba(18, 40, 76, 0.6);">BY CATEGORY</P>
+              <P><a href="">Shop All</a></P>
+              <P><a href="">Cleaners</a></P>
+              <p><a href="">Eye Care</a></p>
+              <p><a href="">Masks</a></p>
+              <p><a href="">Sets</a></p>
+              <p><a href="">Sun Care</a></p>
+              <p><a href="">Tools & Accessories</a></p>
+          </div>
+          <div id="fourth" class="one">
+              <p style="color:rgba(18, 40, 76, 0.6);">FEATURED</p>
+              <p><a href="">Best Seller</a></p>
+              <p><a href="">New Arrivals</a></p>
+              <p><a href="">Anti-Aging</a></p>
+              <p><a href="">Antioxidants</a></p>
+              <p><a href="">Skincare Tools</a></p>
+              <p><a href="">Supplements</a></p>
+              <p><a href="">Travel Size</a></p>
+              <p><a href="">Vitamin C</a></p>
+          </div>
+          
+      </div>
+      
+  </div>
+
+
+
+
+
+
+  <!-- Main code -->
+
+    <div class="main1">
+   
+      <div class="left">
+          <div class="nav2">
+      
+      <a></a>
+  </div>
+     <div id="allinone">
+             <div class="Filterall">
+             <div class="FilterCategory ">
+               <button aria-label="Open brand Filters" class="FilterCategory__Header" title="Open brand Filters">
+              <span class="FilterType">brand</span>
+              <span class="TotalFilters">124 available</span>
+              <span aria-hidden="true" class="Icon undefined">
+                  <svg class="Icon--plus" viewBox="0 0 16 16">
+                      <path d="M8 1v14M1 8h14" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="square"></path>
+                  </svg>
+              </span></button>
+              <div class="BrandSearch">
+              <input placeholder="SEARCH BRANDS"><span aria-hidden="true" class="Icon undefined"><svg role="presentation" viewBox="0 0 20 20" stroke="currentColor">     
+              <g stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+              <g transform="translate(-1237.000000, -15.000000)"><g>
+              <g transform="translate(60.000000, 7.000000)">
+              <g transform="translate(1177.000000, 8.000000)"><g>
+              <g><circle cx="7.60116364" cy="7.60116364" r="6.7184"></circle>
+              <line x1="12.3988364" y1="12.3988364" x2="19.1172364" y2="19.1172364"></line></g></g></g></g></g></g></g></svg> </span>
+             
+          </div>
+              </div>
+              <div class="FilterCategory ">
+              <button aria-label="Open benefit Filters" class="FilterCategory__Header" title="Open benefit Filters">
+                  <span class="FilterType">benefit</span><span class="TotalFilters">38 available</span>
+                  <span aria-hidden="true" class="Icon undefined"><svg class="Icon--plus" viewBox="0 0 16 16">
+                      <path d="M8 1v14M1 8h14" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="square"></path>
+                  </svg></span></button>
+          </div>
+          
+          <div class="FilterCategory ">
+              <button aria-label="Open price Filters" class="FilterCategory__Header" title="Open price Filters">
+                  <span class="FilterType">price</span><span class="TotalFilters">6 available</span>
+                  <span aria-hidden="true" class="Icon undefined"><svg class="Icon--plus" viewBox="0 0 16 16">
+                      <path d="M8 1v14M1 8h14" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="square"></path>
+                  </svg></span></button>
+          </div>
+
+          <div class="FilterCategory ">
+              <button aria-label="Open concern Filters" class="FilterCategory__Header" title="Open concern Filters">
+                  <span class="FilterType">concern</span><span class="TotalFilters">27 available</span>
+                  <span aria-hidden="true" class="Icon undefined"><svg class="Icon--plus" viewBox="0 0 16 16">
+                      <path d="M8 1v14M1 8h14" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="square"></path>
+                  </svg></span></button>
+              </div>
+            
+              <div class="FilterCategory ">
+                  <button aria-label="Open more ways to shop Filters" class="FilterCategory__Header" title="Open more ways to shop Filters">
+                      <span class="FilterType">more ways to shop</span>
+                      <span class="TotalFilters">9 available</span>
+                      <span aria-hidden="true" class="Icon undefined"><svg class="Icon--plus" viewBox="0 0 16 16">
+                          <path d="M8 1v14M1 8h14" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="square"></path>
+                      </svg></span>
+                  </button>
+                    </div>
+              </div>
+      </div>
+  </div>
+
+   <div class="flex1">
+      <div id="parent2">
+          <div class="parent3">
+              <h1>SKINCARE</h1>
+          <div class="sortby">
+              <label for="sortnames">SORT BY</label>
+              <select name="sortnames" id="sortnames" onchange="handlenamesort()">
+                  <option value="Featured">Featured</option>
+                  <svg role="presentation" viewBox="0 0 21 11">
+                      <polyline fill="none" stroke="currentColor" points="0.5 0.5 10.5 10.5 20.5 0.5" strokewidth="1.25">
+                  </polyline></svg>
+                  <option value="NewArrivals">NewArrivals</option>
+                  
+                  <option value="Plth">Price, Low to High</option>
+                  <option value="phtl">Price, High to Low</option>   
+            </select>
+          </div>
+      </div>
+  </div>
+      <hr>
+      <div id="parent">
+   </div>
+  
+</div>   
+</div>
+</div>
+
+
+
+
+
+<footer class="footer-part">
+  <div class="newsletter">
+    <p>Get Expert Beauty Insight & Offers</p>
+    <form id="footer-mail-collect">
+      <input
+        class="footer-mail e-mail"
+        id="newsletter-mail-input"
+        name="e-mail"
+        type="email"
+        placeholder="EMAIL ADDRESS"
+      />
+      <button id="arrow-submit-btn" type="submit">
+        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+      </button>
+    </form>
+    <p>
+      By continuing, you agree to Bluemercury's
+    </p>
+    <a href="index.html">Privacy Notice</a>
+    <p class="icons">
+      <a href="https://twitter.com/bluemercury" target="_blank"
+        ><i class="fa fa-twitter" aria-hidden="true"></i
+      ></a>
+      <a href="https://www.pinterest.com/bluemercury/" target="_blank"
+        ><i class="fa fa-pinterest-p" aria-hidden="true"></i
+      ></a>
+      <a href="https://facebook.com/bluemercury" target="_blank"
+        ><i class="fa fa-facebook" aria-hidden="true"></i
+      ></a>
+      <a href="https://instagram.com/bluemercury" target="_blank"
+        ><i class="fa fa-instagram" aria-hidden="true"></i
+      ></a>
+      <a
+        href="https://www.youtube.com/channel/UCrgUXfV7IIFllEQMbzd9J3A"
+        target="_blank"
+        ><i class="fa fa-youtube-play" aria-hidden="true"></i
+      ></a>
+    </p>
+    <p>Copyright 2023 bluemercury. All Rights Reserved.</p>
+  </div>
+
+  <div class="footer-navwrap">
+    <div class="bluemercury-links">
+      <h2>Bluemercury</h2>
+      <ul>
+        <li>
+          <a href="#">Our Company</a>
+        </li>
+        <li>
+          <a href="#">Store Locator</a>
+        </li>
+        <li>
+          <a href="#">In-Store & Online Events</a>
+        </li>
+        <li>
+          <a href="#">Spa Menu</a>
+        </li>
+        <li>
+          <a href="#">Careers</a>
+        </li>
+        <li>
+          <a href="#">Vendor Submissions</a>
+        </li>
+        <li>
+          <a href="#">Diversity & Inclusion</a>
+        </li>
+      </ul>
+    </div>
+    <div class="myaccount-links">
+      <h2>My Account</h2>
+      <ul>
+        <li>
+          <a href="#">My Account</a>
+        </li>
+        <li>
+          <a href="#">BlueRewards</a>
+        </li>
+        <li>
+          <a href="#">Gift Card Balance Checker</a>
+        </li>
+      </ul>
+    </div>
+    <div class="customerservice-links">
+      <h2>Customer Service</h2>
+      <ul>
+        <li>
+          <a href="#">Contact Us</a>
+        </li>
+        <li>
+          <a href="#">Help & FAQ</a>
+        </li>
+        <li>
+          <a href="#">Shipping, Returns & Exchanges</a>
+        </li>
+        <li>
+          <a href="#">Gift Cards</a>
+        </li>
+        <li>
+          <a href="#">Offers & Promotions</a>
+        </li>
+        <li>
+          <a href="#">Klarna</a>
+        </li>
+      </ul>
+    </div>
+    <div class="resources-links">
+      <h2>Resources</h2>
+      <ul>
+        <li>
+          <a href="#">Terms & Conditions</a>
+        </li>
+        <li>
+          <a href="#">Privacy Notice</a>
+        </li>
+        <li>
+          <a href="#">Do Not Sell or Share My Information</a>
+        </li>
+        <li>
+          <a href="#">CA Privacy Rights</a>
+        </li>
+        <li>
+          <a href="#">Accessiblility</a>
+        </li>
+        <li>
+          <a href="#">Affiliate Program</a>
+        </li>
+        <li>
+          <a href="#">Cookie Preferences</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
+<script src="product.js"></script>
