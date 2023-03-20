@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon"  href="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/favicon_48x48.png?v=1614288647">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+            
+            <script src="https://kit.fontawesome.com/a079df429a.js" crossorigin="anonymous"></script>
+    
+    <style>
+
+      /* Navbar css */
+
+body {
+    font-family: "Montserrat Light", sans-serif;
+}
+#navigation-links {
+    display: flex;
+    width: 95%;
+    margin: auto;
+}
+.heading_one {
+    display: flex;
+}
+.heading_one>div:nth-child(2) {
+    margin-left: 10px;
+    margin-right: 30px;
+    margin-top: 10px;
+    font-size: 12px;
+    color : #12284c;
+    font-weight: 400;
+}
+#navigation-links>div:nth-child(1) {
+    flex-grow: 1;
+}
+.logo{
+    text-align: center;
+}
+.logo img{
+    height: 50px;
+}
+#shoplink{
+    display: flex;
+    justify-content: space-around;
+    width: 75%;
+    margin: auto;
+    margin-top: 20px;
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color : #12284c;
+    /* color: rgba(18, 40, 76); */
+}
+i{
+    margin-top:8px ;
+    cursor: pointer;
+
+}
+.productlink{
+    text-decoration: none;
+    font-weight:100;
+    color: rgba(18, 40, 76, 0.8);
+    font-size: 12px;
+    line-height: 24px;
+    font-style: normal;
+    background-color: white;
+    border: none;
+    
+}
+a:hover {
+    color: rgba(18, 40, 76);
+    font-weight: 400;
+}
+#shop {
+    text-decoration: none;
+}
+button {
+    border: none;
+    background: none;
+}
+
+#shop_hover {
+    width: 90%;
+    display: none;
+    margin: auto;
+    grid-template-columns: 200px 50px 200px 200px 300px;
+    padding-left: 200px;
+    position: fixed;
+    top: 140px;
+    z-index: 2;
+    border-width: 1px 0 1px 0;
+    border-style: solid;
+    border-color: #EEEEEE;
+}
+
+#shop_hover a {
+    text-decoration: none;
+    color: rgba(18, 40, 76, 0.6);
+    font-size: 14px; 
+}
+
+#shop_hover a:hover {
+    color: #12284c;
+    size: 10px;
+  }
+.two {
+    width: 0%;
+    height: 410px;
+    border: .1px solid #E0E0E0;
+}
+ 
+
+
+
+/* Main code css */
+
+
+        .img1{
+            width: 100px;
+            height: 100px;
+        }
+        .main111{  
+        margin-top: 2%;
+        display: flex;
+        justify-content: space-around;
+        }
+        .left1{ 
+       width: 32%;
+       margin-left: 15%;
+        }
+    .right1{
+        width: 100%;
+      }  
+      .img2{
+    width: 144px;
+    height: 115px;
+    display: flex;
+    box-shadow: 0px -3px 11px black;
+    display: flex;
+    justify-content: space-around;
+      }
+      .right2{
+        margin-right: 0%;
+    min-width: max-content;
+      }
+      .p11{
+        margin: 0%;
+    padding: 1px 1px 1px;
+    margin-top: 11%;
+      }
+      h1{
+        margin: 0%;
+    font-size: 22px;
+    line-height: 1.125;
+    font-family: Montserrat Light,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #12284c;
+    background: #fff;
+      }
+      p{
+        margin: 3%;
+    color: inherit;
+    background-color: transparent;
+    font-family: Montserrat Regular,sans-serif;
+    font-size: 18px;
+    line-height: 1.125;
+    margin-left: 0%;
+      }
+      p1{
+        color: #333;
+    font-family: Montserrat Semi Bold,sans-serif;
+    font-size: 12px;
+    letter-spacing: .5px;
+    margin-right: 15px;
+    text-transform: uppercase;
+      }
+      h2{
+        margin:0%;
+      }
+      p3{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    text-align: left;
+    color: #17120f;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 14px
+      }
+      .ppp22{
+        color: #333;
+    font-family: Montserrat Light,sans-serif;
+    margin: 16px 0px 0px;
+      }
+    
+.svg:not(:root) {
+    overflow: hidden;
+}
+.Icon {
+    display: inline-block;
+    height: 27px;
+    width: 22px;
+    margin-left: 93%;
+    fill: currentColor;
+    vertical-align: middle;
+    stroke-width: 2px;
+    background: none;
+    pointer-events: none;
+}
+
+
+   .bag11{
+    margin-right: 150px;
+    display: flex;
+    background-color: #295db7;
+    width: 429px;
+   }
+
+   .btn-counter-wrapper{
+    display: flex;
+    align-items: center;
+    gap:20px;
+
+}
+   .addtocart1{
+    margin-left: 7%;
+    margin-top: 5%;
+    letter-spacing: 2px;
+    color: #fff;
+    font-family: Montserrat Semi Bold,sans-serif;
+    font-size: 17px;
+    line-height: 0;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+   }
+   .h21{
+    margin-left: 43%;
+    margin-top: 3%;
+    color: white;
+    font-size: 20px;
+   }
+   .icon111{
+    display:inline-block;
+   }
+   .shopping1{
+    padding: 9px 16px 0px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 430px;
+    height: 44px;
+    margin-top: 7%;
+    
+}
+
+.productd{
+    margin-left: 19%;
+    margin-top: 14%;
+    font-size: 20px;
+    width: 880px;
+    height: 68px;
+    padding: 7px 12px 7px 0;
+    text-align: initial;
+    border: 1px solid #e9e9e96b;
+    font-family: Montserrat Light,sans-serif;
+    color: #12284c;
+}
+.productd1{
+    margin-left: 19%;
+    font-size: 20px;
+    width: 880px;
+    height: 68px;
+    padding: 7px 12px 7px 0;
+    text-align: initial;
+    border: 1px solid#e9e9e96b;
+    font-family: Montserrat Light,sans-serif;
+    color: #12284c;
+}
+.productd2{
+    margin-left: 19%;
+    font-size: 20px;
+    width: 880px;
+    height: 68px;
+    padding: 7px 12px 7px 0;
+    text-align: initial;
+    border: 1px solid #e9e9e96b;
+    font-family: Montserrat Light,sans-serif;
+    color: #12284c;
+}
+.productd3{
+    margin-left: 19%;
+    font-size: 20px;
+    width: 880px;
+    height: 68px;
+    padding: 7px 12px 7px 0;
+    text-align: initial;
+    border: 1px solid #e9e9e96b;
+    font-family: Montserrat Light,sans-serif;
+    color: #12284c;
+}
+.productd4{
+    margin-left: 19%;
+    font-size: 20px;
+    width: 880px;
+    height: 68px;
+    padding: 7px 12px 7px 0;
+    text-align: initial;
+    border: 1px solid #e9e9e96b;
+    font-family: Montserrat Light,sans-serif;
+    color: #12284c;
+}
+
+.plus{
+    margin-left: 97%;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+}
+
+
+
+
+        /* footer css */
+
+/****************************
+Start: Footer part
+****************************/
+
+.footer-part {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 30px 30px;
+    border-top: 2px solid #dcdcdc;
+    font-size: 16px;
+}
+
+.newsletter {
+    flex: 0 1 auto; /* SOMETHING IS GOING WRONG ON DECREASING WINDOW WIDTH */
+    margin: 0px 20px 0 15px;
+    max-width: 50ch;
+    min-width: 30ch;
+    line-height: 30px;
+    
+}
+
+.newsletter>p{
+  font-size: 14px;
+}
+
+.newsletter > .icons {
+    display: flex;
+    flex: 1 1 0%;
+    justify-content: space-between;
+    max-width: 90%;
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #12284c;
+}
+
+.footer-navwrap {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 0;
+    justify-content: space-between;
+    min-width: 600px;
+    margin-left: 50px;
+}
+
+.footer-navwrap > * {
+    justify-items: space-between;
+    flex-basis: 100%;
+    margin-bottom: 5px;
+    color: #12284c;
+    font-weight: normal;
+}
+
+.footer-navwrap h2 {
+    font-weight: normal;
+    font-size: 14px;
+    font-family: "Montserrat Light", sans-serif;
+    text-transform: uppercase;
+}
+
+.footer-navwrap > div > * > * {
+    margin: 16px auto;
+}
+
+.footer-navwrap ul,
+.footer-navwrap li a {
+    color: #12284c;
+    list-style-type: none;
+    padding: 0px;
+    text-decoration: none;
+}
+
+.footer-mail {
+    width: 90%;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid #12284c;
+}
+
+.footer-mail:focus {
+    outline: none;
+}
+
+#arrow-submit-btn {
+    border: none;
+    outline: none;
+    margin: 0px;
+    padding: 0px;
+    height: 30px;
+    background-color: white;
+}
+
+#arrow-submit-btn:hover {
+    cursor: pointer;
+}
+
+
+
+.footer-mail:focus {
+    background-color: white;
+}
+    </style>
+</head>
+<body>
+  
+    <!-- Navbarcode -->
+
+    <div id="navbar">
+        <div id="navigation-links">
+            <div class="heading_one">
+                <div>
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div> <a href=""> STORE & SPA LOCATOR </a></div>
+            </div>
+            <div class="heading_one">
+                <div>
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+                <div> <a href=""> WISHLIST </a></div>
+            </div>
+            <div class="heading_one">
+                <div><i class="fa fa-search" aria-hidden="true"></i></div>
+                <div>  <a href="">SEARCH </a></div>
+            </div>
+            <div id="click-log" class="heading_one">
+                <div>
+                  <i class="fa fa-user-circle"></i>
+
+                </div>
+                <div> <a href="siginUp.html">SIGN IN/UP</a></div>
+            </div>
+            <div class="heading_one" onclick="window.location.href = 'cart.html'">
+                <div>
+                    <a href="cart.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
+                </div>
+                <div>  <a href="">BAG</a></div>
+            </div>
+        </div>
+        <div class="logo"><img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/blm_36dad4a4-9b14-4ef8-9509-6a593f135aae_416x@2x.png?v=1588538421" onclick="pimage()">
+        </div>
+        <div id="shoplink">
+            <!-- <div><button class="productlink"><a href>SHOP</a></button></div> -->
+            <div class="btn1"><button id="disappear"><a id="shop" class="heading_a">SHOP</a></button></div>
+            <div><button class="productlink"><a href="" target="_blank" id="go-to-new">NEW!</a></button></div>
+            <div><button class="productlink"><a href="" target="_blank">BRANDS</a></button></div>
+            <div><button class="productlink"><a href="" target="_blank">EXPLORE</a></button></div>
+            <div><button class="productlink"><a href="" target="_blank">EVENTS</a></button></div>
+            <div><button class="productlink"><a href="" target="_blank">BLUEREWARDS</a></button></div>
+            <div><button class="productlink"><a href="" target="_blank">HOLIDAY GIFT GUIDE</a></button></div>
+        </div>
+
+        <!-- Hover Start -->
+        <div id="shop_hover">
+            <div id="first" class="one">
+                <p><a href="">SKIN CARE</a></p>
+                <p><a href="">MAKEUP</a></p>
+                <p><a href="">BATH AND BODY</a></p>
+                <p><a href="">HAIR</a></p>
+                <p><a href="">SUN AND TAN</a></p>
+                <P><a href="">SCENTS & HOME</a></P>
+                <P><a href="">MEN</a></P>
+                <P><a href="">GIFTS</a></P>
+            </div>
+            <div id="second" class="two"></div>
+            <div id="third" class="one">
+                <P style="color:rgba(18, 40, 76, 0.6);">BY CATEGORY</P>
+                <P><a href="">Shop All</a></P>
+                <P><a href="">Cleaners</a></P>
+                <p><a href="">Eye Care</a></p>
+                <p><a href="">Masks</a></p>
+                <p><a href="">Sets</a></p>
+                <p><a href="">Sun Care</a></p>
+                <p><a href="">Tools & Accessories</a></p>
+            </div>
+            <div id="fourth" class="one">
+                <p style="color:rgba(18, 40, 76, 0.6);">FEATURED</p>
+                <p><a href="">Best Seller</a></p>
+                <p><a href="">New Arrivals</a></p>
+                <p><a href="">Anti-Aging</a></p>
+                <p><a href="">Antioxidants</a></p>
+                <p><a href="">Skincare Tools</a></p>
+                <p><a href="">Supplements</a></p>
+                <p><a href="">Travel Size</a></p>
+                <p><a href="">Vitamin C</a></p>
+            </div>
+            <div id="fifth" class="one">
+                <div>
+                    <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/cooling_eye_gel_nav_114x114.jpg?v=1626722614" alt="">
+                    <p><a href="">M-61</a></p>
+                    <p><a href="">Hydraboosyt Cooling Eye Gel</a></p>
+                    <br/>
+                </div>
+                <div>
+                    <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/files/kiehl_s_nav_feature_114x114.jpg?v=1629317112" alt="">
+                    <p><a href="">Kiehl's</a></p>
+                    <spanp><a href="">Retinol daily Microdose Serum</a></span>
+                </div>
+            </div>
+        </div>
+        <!-- Hover Ends -->
+    </div>
+
+
+
+     <!-- Maincode -->
+
+    <div class="main111">
+       <div class="left1">
+            <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-5060552905975-1_550x.jpg?v=1669131249" class="img2">
+            <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-5060552905975-2_550x.jpg?v=1669131250" class="img2">
+       </div>
+        <div class="right1">
+            <div class="img1">
+                <img src="https://cdn.shopify.com/s/files/1/0283/0185/2747/products/global_images-5060552905975-1_550x.jpg?v=1669131249" alt="">
+            </div>
+    </div>
+        <div class="right2">
+            <div class="p11">
+            <p1>Augustinus Bader</p1>
+             <h1> The Hydration Heroes With The Rich Cream </h1> 
+             <p1>CONSCIOUS BEAUTY | LIMITED EDITION </p1>
+             <div>
+                <h2>$325</h2>
+                <p3>4 interest-free payments of $81.25 with Klarna. Learn More</p3>
+             </div>
+             <div class="ppp22">
+                Hydrate to the fullest with this heroic skin care duo.&nbsp;    <br>
+            </div>
+           
+            <div class="btn-counter-wrapper">
+                <div class="bag11">
+                    <button aria-label="View bag" class="iconicon" title="Bag" type="button">
+                      <span>
+                          <svg class="Icon Icon--bag" viewBox="0 0 21 22"><g fill="none" fill-rule="evenodd"  stroke="#0D2A4B" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M17.880606 20.8639682H3.1334124c-.37129173.0017849-.68305919-.2725769-.71984982-.6334828L1.16193182 5.3563089c0-.3498629.29034931-.63348281.64851335-.63348281H19.2165435c.358164 0 .6485133.28361991.6485133.63348281l-1.2516307 14.8615069c-.0307971.3708491-.3520112.6540745-.7328201.6461524h0z"> </path>
+                          <path d="M15.4119318 10.10326087V6.1838607c0-2.78792852-2.1931052-5.04799114-4.89843748-5.04799114-2.70533233 0-4.8984375 2.26006262-4.8984375 5.04799114v3.91940017M18.0838068 18.6222826H2.05255682"></path></g></svg></span>
+                           <span class="Header__CartDot null">
+                          <span id="cart-rerender">
+                          </span></span></button>
+                          <a href="cart.html" class="addtocart1">ADD TO BAG</a>
+                          <h2 class="h21">$325</h2>
+                      </div>  
+                          
+                         </div>
+                   </div>
+                   <div class="shopping1">
+                    <p>Shipping & Returns</p>
+                   </div>
+             </div>
+             
+        </div>
+        <button class="productd">Product Information <span class="plus"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false" role="presentation">
+            <g fill="none" fillrule="evenodd" stroke="none" strokelinecap="round" strokelinejoin="round" strokewidth="1">
+              <g stroke="currentColor">
+                <path d="M2.5 8h11M8 13.5v-11"></path>
+              </g>
+            </g>
+            </svg></span></button>
+        <button class="productd1">What's Included <span class="plus"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false" role="presentation">
+            <g fill="none" fillrule="evenodd" stroke="none" strokelinecap="round" strokelinejoin="round" strokewidth="1">
+              <g stroke="currentColor">
+                <path d="M2.5 8h11M8 13.5v-11"></path>
+              </g>
+            </g>
+            </svg></span></button>
+        <button class="productd2">Ingredients <span class="plus"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false" role="presentation">
+            <g fill="none" fillrule="evenodd" stroke="none" strokelinecap="round" strokelinejoin="round" strokewidth="1">
+              <g stroke="currentColor">
+                <path d="M2.5 8h11M8 13.5v-11"></path>
+              </g>
+            </g>
+            </svg></span></button>
+        <button class="productd3">How To Use <span class="plus"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false" role="presentation">
+            <g fill="none" fillrule="evenodd" stroke="none" strokelinecap="round" strokelinejoin="round" strokewidth="1">
+              <g stroke="currentColor">
+                <path d="M2.5 8h11M8 13.5v-11"></path>
+              </g>
+            </g>
+            </svg></span></button>
+        
+        <button class="productd4">Reviews <span class="plus"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false" role="presentation">
+            <g fill="none" fillrule="evenodd" stroke="none" strokelinecap="round" strokelinejoin="round" strokewidth="1">
+              <g stroke="currentColor">
+                <path d="M2.5 8h11M8 13.5v-11"></path>
+              </g>
+            </g>
+            </svg></span></button> 
+            </div> 
+            
+            <div class="content">
+             <p>Developed by a world-leading expert in stem cell research, Professor Augustinus Bader has spent thirty years unlocking the bodys innate processes to self-heal. The result? Game-changing skincare that uses a unique Trigger Factor Complex called TFC8® to optimize skin health, visibly reduce the damage caused by environmental stressors, and restore skin radiance.Learn more about founder Augustinus Bader in this exclusive Q+A!</p>
+    </div>
+    
+    
+
+    <footer class="footer-part">
+      <div class="newsletter">
+        <p>Get Expert Beauty Insight & Offers</p>
+        <form id="footer-mail-collect">
+          <input
+            class="footer-mail e-mail"
+            id="newsletter-mail-input"
+            name="e-mail"
+            type="email"
+            placeholder="EMAIL ADDRESS"
+          />
+          <button id="arrow-submit-btn" type="submit">
+            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+          </button>
+        </form>
+        <p>
+          By continuing, you agree to Bluemercury's
+        </p>
+        <a href="index.html">Privacy Notice</a>
+        <p class="icons">
+          <a href="https://twitter.com/bluemercury" target="_blank"
+            ><i class="fa fa-twitter" aria-hidden="true"></i
+          ></a>
+          <a href="https://www.pinterest.com/bluemercury/" target="_blank"
+            ><i class="fa fa-pinterest-p" aria-hidden="true"></i
+          ></a>
+          <a href="https://facebook.com/bluemercury" target="_blank"
+            ><i class="fa fa-facebook" aria-hidden="true"></i
+          ></a>
+          <a href="https://instagram.com/bluemercury" target="_blank"
+            ><i class="fa fa-instagram" aria-hidden="true"></i
+          ></a>
+          <a
+            href="https://www.youtube.com/channel/UCrgUXfV7IIFllEQMbzd9J3A"
+            target="_blank"
+            ><i class="fa fa-youtube-play" aria-hidden="true"></i
+          ></a>
+        </p>
+        <p>Copyright 2023 bluemercury. All Rights Reserved.</p>
+      </div>
+  
+      <div class="footer-navwrap">
+        <div class="bluemercury-links">
+          <h2>Bluemercury</h2>
+          <ul>
+            <li>
+              <a href="#">Our Company</a>
+            </li>
+            <li>
+              <a href="#">Store Locator</a>
+            </li>
+            <li>
+              <a href="#">In-Store & Online Events</a>
+            </li>
+            <li>
+              <a href="#">Spa Menu</a>
+            </li>
+            <li>
+              <a href="#">Careers</a>
+            </li>
+            <li>
+              <a href="#">Vendor Submissions</a>
+            </li>
+            <li>
+              <a href="#">Diversity & Inclusion</a>
+            </li>
+          </ul>
+        </div>
+        <div class="myaccount-links">
+          <h2>My Account</h2>
+          <ul>
+            <li>
+              <a href="#">My Account</a>
+            </li>
+            <li>
+              <a href="#">BlueRewards</a>
+            </li>
+            <li>
+              <a href="#">Gift Card Balance Checker</a>
+            </li>
+          </ul>
+        </div>
+        <div class="customerservice-links">
+          <h2>Customer Service</h2>
+          <ul>
+            <li>
+              <a href="#">Contact Us</a>
+            </li>
+            <li>
+              <a href="#">Help & FAQ</a>
+            </li>
+            <li>
+              <a href="#">Shipping, Returns & Exchanges</a>
+            </li>
+            <li>
+              <a href="#">Gift Cards</a>
+            </li>
+            <li>
+              <a href="#">Offers & Promotions</a>
+            </li>
+            <li>
+              <a href="#">Klarna</a>
+            </li>
+          </ul>
+        </div>
+        <div class="resources-links">
+          <h2>Resources</h2>
+          <ul>
+            <li>
+              <a href="#">Terms & Conditions</a>
+            </li>
+            <li>
+              <a href="#">Privacy Notice</a>
+            </li>
+            <li>
+              <a href="#">Do Not Sell or Share My Information</a>
+            </li>
+            <li>
+              <a href="#">CA Privacy Rights</a>
+            </li>
+            <li>
+              <a href="#">Accessiblility</a>
+            </li>
+            <li>
+              <a href="#">Affiliate Program</a>
+            </li>
+            <li>
+              <a href="#">Cookie Preferences</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
+<script src="product.js"></script>
