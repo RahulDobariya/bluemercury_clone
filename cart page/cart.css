@@ -9,6 +9,33 @@ body {
     letter-spacing: 1px;
     margin: 10px 0px 0px 0px;
 }
+#pic {
+    width: 150px;
+    height: 150px;
+}
+#pro {
+    width: 250px;
+    height: 250px;
+}
+
+#offers div {
+    display: flex;
+    align-items: center;
+  }
+
+  #offers div > div {
+    margin-left: 140px;
+    padding: 10px;
+  }
+  
+  #offers div > div h4 {
+    margin-left: 200px;
+  }
+
+  #offers #pro {
+    margin-right: 10px;
+  }
+
 a {
     
     color: #12284c;
