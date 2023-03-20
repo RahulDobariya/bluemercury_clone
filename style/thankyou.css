@@ -1,0 +1,350 @@
+/*********************
+Body
+*********************/
+
+body {
+        font-family: Montserrat Medium, sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+        letter-spacing: 1px;
+        margin: 0px;
+}
+
+a {
+        text-decoration: none;
+        color: #12284c;
+        margin: 0;
+        padding: 0;
+}
+
+/*********************
+      Start: Navigation bar
+      **********************/
+
+#main_nav {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        text-transform: uppercase;
+        font-family: Montserrat Medium, sans-serif;
+        font-size: 12px;
+        letter-spacing: 1px;
+        /*background-color: tomato;*/
+}
+
+.top_part {
+        display: flex;
+        /*background-color: aqua;*/
+        padding: 10px 50px;
+}
+
+.top_part>div {
+        /*background-color: rgb(255, 225, 57);*/
+        margin: 2px;
+        flex-basis: 100%;
+}
+
+.bottom_part {
+        clear: both;
+}
+
+.top_part ul,
+.bottom_part ul {
+        display: flex;
+        margin: 0px;
+        list-style-type: none;
+        flex: 1 1 0%;
+        padding: 0px;
+        /*background-color: chocolate;*/
+}
+
+.top_part ul>li {
+        justify-self: center;
+        /*text-align: right;*/
+        flex-basis: 100%;
+        /*background-color: crimson;*/
+        /*flex-wrap: nowrap;*/
+        height: 30px;
+}
+
+.bottom_part ul li {
+        /*justify-self: center;*/
+        /*width: 150px;*/
+        /*padding: 5px;*/
+        margin: 1px;
+        flex-basis: 100%;
+        /*background-color: thistle;*/
+}
+
+.menu {
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+        margin: auto;
+        flex: 1 1 0%;
+        font-size: 16px;
+}
+
+.menu li:hover {
+        border-bottom: 3px solid #12284c;
+}
+
+.top_part ul li a,
+.bottom_part ul li a {
+        text-decoration: none;
+        text-align: center;
+        color: #5e769b;
+        /*padding-left: 7px;
+          padding-right: 20px;*/
+        box-sizing: border-box;
+        width: 100%;
+}
+
+.navItem {
+        /*align-self: flex-end;*/
+        width: 80%;
+        right: 0;
+        float: right;
+}
+
+.navItem li {
+        /*background-color: tomato;*/
+        margin: 1px;
+        text-align: center;
+        padding: 3px;
+}
+
+.navItem li a i,
+.top_part .location a i {
+        font-size: 20px;
+}
+
+.location a {
+        text-decoration: none;
+        color: #12284c;
+}
+
+.logo img {
+        min-width: 150px;
+        max-width: 200px;
+}
+
+.logo {
+        align-self: center;
+        flex-shrink: 2;
+}
+
+.navItem>li:hover {
+        color: #12284c;
+        transition: cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+/*********************
+      End: Navigation bar
+      **********************/
+
+/*************************
+      Start: Carousel Section
+      *************************/
+
+.announcement-bar {
+        width: 100%;
+        margin: auto;
+        background-color: #12284c;
+        color: white;
+        padding: 1px;
+}
+
+/*************************
+      End: Carousel Section
+      *************************/
+#thank_you {
+        margin: auto;
+}
+
+#thank_you img {
+        margin-top: 50px;
+        margin-left: 400px;
+        clear: both;
+}
+
+#thank_you button {
+        border: 0px;
+        clear: both;
+        margin-top: 50px;
+        margin-bottom: 100px;
+}
+
+/****************************
+      Start: Footer part
+      ****************************/
+
+.footer-part {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 15px 30px;
+        border-top: 1px solid #dcdcdc;
+        /*background-color: #769ad3;*/
+}
+
+.newsletter {
+        /*flex-basis: 300px;*/
+        flex: 0 1 auto;
+        /* SOMETHING IS GOING WRONG ON DECREASING WINDOW WIDTH */
+        margin: 0px 20px;
+        max-width: 50ch;
+        min-width: 30ch;
+        /*background-color: burlywood;*/
+}
+
+.newsletter>.icons {
+        display: flex;
+        flex: 1 1 0%;
+        justify-content: space-between;
+        max-width: 90%;
+        font-size: 30px;
+        color: #12284c;
+}
+
+.footer-navwrap {
+        display: flex;
+        flex-direction: row;
+        flex: 1 1 0;
+        /*background-color: brown;*/
+        justify-content: space-between;
+        min-width: 600px;
+        /* CHANGE THIS IN FUTURE TO MAKE IT PROPERLY RESPONSIVE*/
+}
+
+.footer-navwrap>* {
+        justify-items: space-between;
+        flex-basis: 100%;
+        margin-bottom: 5px;
+        /*background-color: aqua;*/
+        color: #12284c;
+        /*overflow: visible;*/
+        font-weight: normal;
+}
+
+.footer-navwrap>div>*>* {
+        margin: 20px auto;
+}
+
+.footer-navwrap ul,
+.footer-navwrap li a {
+        color: #12284c;
+        list-style-type: none;
+        padding: 0px;
+        text-decoration: none;
+}
+
+.footer-mail {
+        width: 90%;
+        height: 30px;
+        border: none;
+        border-bottom: 1px solid #12284c;
+}
+
+.footer-mail:focus {
+        outline: none;
+}
+
+#arrow-submit-btn {
+        border: none;
+        outline: none;
+        /*border-bottom: 1px solid #12284C;*/
+        margin: 0px;
+        padding: 0px;
+        height: 30px;
+        background-color: white;
+}
+
+#arrow-submit-btn:hover {
+        cursor: pointer;
+}
+
+#mail-submission-success-overlay {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        display: none;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 2;
+        cursor: pointer;
+        text-align: center;
+        color: #12284c;
+        transition: 2s;
+}
+
+#mail-submission-success-overlay>div {
+        font-size: 20px;
+        width: 300px;
+        height: 300px;
+        padding: 50px;
+        margin: 5% auto;
+        /*align-content: center;*/
+        background-color: white;
+        border-radius: 15px;
+}
+
+#mail-submission-success-overlay>div>img {
+        width: 50px;
+        margin-top: 50px;
+}
+
+#hide-overlay {
+        color: #12284c;
+        color: #12284c;
+        border: 2px solid #12284c;
+        border-radius: 10px;
+        width: 45%;
+        margin: auto;
+        /* height: 40px; */
+        padding: 10px;
+        font-size: 20px;
+}
+
+#hide-overlay:hover {
+        cursor: pointer;
+        background-color: #12284c;
+        color: white;
+}
+
+.footer-mail:focus {
+        background-color: white;
+}
+
+.specials {
+        display: flex;
+        /*flex: 0 1 0%;*/
+        /*background-color: darksalmon;*/
+        padding: 2%;
+        /*justify-content: space-between;*/
+        /*align-items: center;*/
+}
+
+.specials>div {
+        align-self: center;
+        margin: 25px;
+        /*background-color: darkseagreen;*/
+        flex-basis: 100%;
+        text-align: center;
+}
+
+.specials>div>img {
+        width: 100%;
+        object-fit: cover;
+}
+
+.context {
+        width: 70%;
+        margin: auto;
+        /*background-color: darkslategray;*/
+}
