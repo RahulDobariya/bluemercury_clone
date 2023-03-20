@@ -91,6 +91,30 @@ let RenderDom = (data) => {
     })
 }
 
+
+let remove_count = document.getElementById("remove_count");
+let add_count = document.getElementById("add_count");
+let product_count = document.getElementById("product_count");
+if (count < 0) {
+    product_count.innerHTML = 0;
+    count = count+1;
+  } else {
+    product_count.innerHTML = count;
+  }
+  // console.log("Decrease: ", count)
+
+
+add_count.addEventListener("click", function () {
+  count = count + 1;
+  
+  if (count < 0) {
+    product_count.innerHTML = 0;
+  } else {
+    cart_btn.removeAttribute('style')
+    product_count.innerHTML = count;
+  }
+});
+
 RenderDom(data)
 
 let erase = (ind) => {
