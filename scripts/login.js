@@ -9,7 +9,7 @@ function checkdata(){
  credentialsdata.map(function(ele){
      if(email==ele.email && password==ele.password){
         document.getElementById("showUsername").textContent = "Logged in as  "+ele.firstname+" ";
-         window.location.assign("hompage.html");
+         window.location.assign("../html/index.html");
          f=1
          localStorage.setItem("username",ele.firstname);
      }
