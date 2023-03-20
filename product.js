@@ -1,7 +1,8 @@
 
 
 var cartArr= JSON.parse(localStorage.getItem("cart")) || [];
-document.getElementById("cart-count").textContent = cartArr.length;
+document.getElementById("cart-count").textContent = cartArr.length ===0 ? "" :cartArr.length;
+
 let x=localStorage.getItem("user");
 
 if (x == null){
